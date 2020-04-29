@@ -359,6 +359,9 @@ template {
 
 main {
   background: url("../img/background.png");
+  height: calc(100vh - 10px);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
