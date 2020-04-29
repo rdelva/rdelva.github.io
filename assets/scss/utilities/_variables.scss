@@ -1,0 +1,95 @@
+//Font Stacks
+
+$font-url--google			: 'https://fonts.googleapis.com/css?family=Lato:300,400,400i,700';
+$font-family--primary		: 'Lato', sans-serif;
+
+
+//Font-Weights
+
+$font-weight--light			: 300;
+$font-weight--medium		: 400;
+$font-weight--italic		: 400i;
+$font-weight--bold			: 700;
+
+// Text
+
+$base__font-size			: 16px;
+$base__line      			: 24px;
+
+
+
+//Colors
+
+$white						: #fff;
+$black						: #000;
+$blueGrey					: #384047;
+$turquoise					: #58e1c1;
+$malibuBlue					: #57defc;
+$emerald					: #63cc82;	
+$sunglo 					: #E4757A;
+$coral						: #fd7856;
+$purpleMountain				: #927BC1;
+$turquoiseBlue				: #80e8d1;
+$shakespeare				: #3fabca;  /*desaturated blue*/
+$anakiwa					: #7ee6fd;  /*shade of blue	*/
+$lilac						: #deb2ee;
+$dustyGreen					: #88d9a0;
+$seaPink					: #ec9fa3;
+$vividTangerine				: #fd9f85;
+$stormCloud					: #818181;
+$cloudy						: #cdcdcd;
+
+
+
+
+
+//Breakpoints
+$brkpoint-xs				: 1px;	
+$brkpoint-sm				: 480px;							
+$brkpoint-m					: 768px;
+$brkpoint-lg				: 1400px;	
+
+
+//UI Colors
+
+$ui-colors: (
+	default					: $malibuBlue,
+	success					: $emerald,
+	error					: $sunglo,
+	warning					: $coral,
+	info					: $purpleMountain	
+);
+
+
+//Background Images
+
+//Grid Colors
+/*
+$grid-colors: (
+	'3'			: $lilac,
+	'4'	 		: $malibuBlue,
+	'5'			: $emerald,
+	'6'			: $shakespeare,
+	'7'			: $seaPink,
+	'8'	 		: $vividTangerine,
+	'12'		: $turquoiseBlue,
+	
+	
+	
+);
+*/
+//Grid
+
+$g-col-width				: 65px;
+$g-gutter-width				: 20px;
+$g-col-count				: 12;
+$g-cont-max-w				: 1050px;
+
+//Border-Radius
+
+$br    						: 5px;
+
+//Layout 
+
+$gutter 					: 10px;
+$max-width					: $brkpoint-lg;
