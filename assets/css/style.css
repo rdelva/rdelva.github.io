@@ -373,6 +373,15 @@ body {
 h1 {
   font-family: "Pacifico", cursive;
   font-size: 100px;
+  padding: 0px;
+  margin: 0px;
+  color: #C24935;
+  display: none;
+}
+@media (min-width: 769px) {
+  h1 {
+    display: block;
+  }
 }
 
 ul {

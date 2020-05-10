@@ -20,7 +20,14 @@ body {
 h1 {
 	font-family: $font-family--secondary;
 	font-size: 100px;
+	padding:0px;
+	margin:0px;
 	color: $mojo;
+	display: none;
+
+	@include mq(medium){
+		display: block;
+	}
 
 }
 ul {
