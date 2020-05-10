@@ -1,7 +1,10 @@
 //Font Stacks
 
-$font-url--google			: 'https://fonts.googleapis.com/css?family=Lato:300,400,400i,700';
-$font-family--primary		: 'Lato', sans-serif;
+$font-url--google			: 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap';
+$font-url--google2			: 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap';
+
+$font-family--primary		: 'Raleway', sans-serif;
+$font-family--secondary		: 'Pacifico', cursive;
 
 
 //Font-Weights
@@ -22,6 +25,7 @@ $base__line      			: 24px;
 
 $white						: #fff;
 $black						: #000;
+$mojo						: #C24935;	
 $blueGrey					: #384047;
 $turquoise					: #58e1c1;
 $malibuBlue					: #57defc;

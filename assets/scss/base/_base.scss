@@ -11,3 +11,19 @@ main {
 	background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+body {
+	font-family: $font-family--primary;
+}
+
+h1 {
+	font-family: $font-family--secondary;
+	font-size: 100px;
+	color: $mojo;
+
+}
+ul {
+	list-style-type: none;
+	padding:0;
+}
