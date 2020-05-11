@@ -30,7 +30,12 @@ h1 {
 	}
 
 }
-ul {
-	list-style-type: none;
-	padding:0;
+
+p {
+	font-family: $font-family--primary;
+	@include text(16px, $font-weight--light); 
+}
+
+.container {
+	padding: 10px;
 }
