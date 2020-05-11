@@ -368,7 +368,8 @@ body, html, .wrapper {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30%;
+  position: relative;
+  height: 50%;
 }
 
 body {
