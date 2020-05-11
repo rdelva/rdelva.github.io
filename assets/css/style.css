@@ -369,11 +369,15 @@ body, html, .wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 50%;
+  height: 100%;
 }
 
 body {
   font-family: "Raleway", sans-serif;
+}
+
+.container {
+  padding: 10px;
 }
 
 h1 {
@@ -382,7 +386,6 @@ h1 {
   padding: 0px;
   margin: 0px;
   color: #C24935;
-  display: none;
 }
 @media (min-width: 769px) {
   h1 {
@@ -390,14 +393,19 @@ h1 {
   }
 }
 
+.credit {
+  font-size: 0.625em;
+  color: #fff;
+  font-weight: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 p {
   font-family: "Raleway", sans-serif;
   font-size: 1em;
   color: 300;
-}
-
-.container {
-  padding: 10px;
 }
 
 ul {
@@ -409,8 +417,9 @@ ul {
   justify-content: space-between;
 }
 
-.title {
-  display: none;
-}
+/*.title {
+    display: none;
+
+} */
 
 /*# sourceMappingURL=style.css.map */

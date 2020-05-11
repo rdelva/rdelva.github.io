@@ -1,0 +1,27 @@
+h1 {
+	font-family: $font-family--secondary;
+	font-size: 100px;
+	padding:0px;
+	margin:0px;
+	color: $mojo;
+	
+
+	@include mq(medium){
+		display: block;
+	}
+
+}
+
+.credit {
+	@include text(10px, $white, none);
+	margin:0;
+	padding:0;
+	position:relative;
+
+	
+}
+
+p {
+	font-family: $font-family--primary;
+	@include text(16px, $font-weight--light); 
+}

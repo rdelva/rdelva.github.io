@@ -19,7 +19,7 @@ body, html, .wrapper {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	height: 50%;
+	height: 100%;
 	
 
 }
@@ -29,24 +29,10 @@ body {
 	font-family: $font-family--primary;
 }
 
-h1 {
-	font-family: $font-family--secondary;
-	font-size: 100px;
-	padding:0px;
-	margin:0px;
-	color: $mojo;
-	display: none;
 
-	@include mq(medium){
-		display: block;
-	}
 
-}
 
-p {
-	font-family: $font-family--primary;
-	@include text(16px, $font-weight--light); 
-}
+
 
 .container {
 	padding: 10px;
