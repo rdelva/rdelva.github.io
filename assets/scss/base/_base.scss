@@ -2,14 +2,24 @@
 // Base Styles
 //=========================================================
 
+body, html, .wrapper {
+	height: 100%;
+}
+
+
 * {	
 	box-sizing:  border-box;
 }
-main {
-	background:url('../img/background.png');
-	height: calc(100vh - 10px);
+
+
+
+.bg {
+	background-image: url('../img/background.png'); 	
+	background-position: center;
 	background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
+	height:30%;
+
 }
 
 
