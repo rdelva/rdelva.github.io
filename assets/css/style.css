@@ -381,25 +381,35 @@ body {
 }
 
 h1 {
+  font-size: 3.75em;
+  color: #C24935;
   font-family: "Pacifico", cursive;
-  font-size: 100px;
   padding: 0px;
   margin: 0px;
-  color: #C24935;
 }
 @media (min-width: 769px) {
   h1 {
-    display: block;
+    font-size: 6.25em;
+    color: #C24935;
   }
+}
+
+h2 {
+  margin: 0px;
+  font-size: 1.5em;
+  color: #23588D;
+  font-family: "Raleway", sans-serif;
 }
 
 .credit {
   font-size: 0.625em;
   color: #fff;
-  font-weight: none;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   position: relative;
+  left: 130px;
+  top: 500px;
 }
 
 p {
@@ -415,6 +425,15 @@ ul {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+}
+
+.menu a {
+  text-decoration: none;
+}
+.menu a:link {
+  font-size: 1em;
+  color: #4B4453;
+  font-weight: none;
 }
 
 /*.title {

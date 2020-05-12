@@ -6,6 +6,18 @@ ul {
     }
 }
 
+.menu {
+    a {
+        text-decoration: none;
+
+        &:link {
+            @include text(  16px , $color: $mortar, $weight: none);
+     
+        }
+
+    }
+   
+}
 /*.title {
     display: none;
 

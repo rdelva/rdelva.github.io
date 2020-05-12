@@ -1,22 +1,31 @@
 h1 {
-	font-family: $font-family--secondary;
-	font-size: 100px;
-	padding:0px;
-	margin:0px;
-	color: $mojo;
-	
+    @include text(60px, $mojo);
+    font-family: $font-family--secondary;
+    padding:0px;
+    margin:0px;
 
-	@include mq(medium){
-		display: block;
+    @include mq(medium){
+   
+        @include text( 100px, $mojo);
+
 	}
 
 }
 
+h2 {
+    margin:0px;
+    @include text(24px, $blueWhale);
+    font-family: $font-family--primary;
+
+}
+
 .credit {
-	@include text(10px, $white, none);
+	@include text(10px, $white, $font-weight--italic);
 	margin:0;
 	padding:0;
-	position:relative;
+    position:relative;
+    left: 130px;
+    top: 500px;
 
 	
 }
@@ -25,3 +34,4 @@ p {
 	font-family: $font-family--primary;
 	@include text(16px, $font-weight--light); 
 }
+
