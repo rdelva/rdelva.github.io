@@ -15,6 +15,19 @@ ul {
      
         }
 
+        
+        &:visited {
+            
+            @include text(  16px , $color: $mortar, $weight: none);
+
+        }
+
+
+        &:hover {
+            @include text(  16px , $color: $mojo, $weight: bold);
+     
+        }
+
     }
    
 }

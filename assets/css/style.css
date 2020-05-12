@@ -380,6 +380,10 @@ body {
   padding: 10px;
 }
 
+.title {
+  margin-top: 50px;
+}
+
 h1 {
   font-size: 3.75em;
   color: #C24935;
@@ -434,6 +438,16 @@ ul {
   font-size: 1em;
   color: #4B4453;
   font-weight: none;
+}
+.menu a:visited {
+  font-size: 1em;
+  color: #4B4453;
+  font-weight: none;
+}
+.menu a:hover {
+  font-size: 1em;
+  color: #C24935;
+  font-weight: bold;
 }
 
 /*.title {

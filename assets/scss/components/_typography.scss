@@ -1,4 +1,9 @@
-h1 {
+.title{
+	margin-top:50px;
+}
+
+
+h1 { // my name
     @include text(60px, $mojo);
     font-family: $font-family--secondary;
     padding:0px;
@@ -12,12 +17,13 @@ h1 {
 
 }
 
-h2 {
+h2 { // my job title
     margin:0px;
     @include text(24px, $blueWhale);
     font-family: $font-family--primary;
 
 }
+
 
 .credit {
 	@include text(10px, $white, $font-weight--italic);
