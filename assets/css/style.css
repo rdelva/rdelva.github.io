@@ -369,11 +369,15 @@ body, html, .wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 100%;
+  height: calc(100vh - 20px);
 }
 
 body {
   font-family: "Raleway", sans-serif;
+}
+
+footer {
+  height: 100px;
 }
 
 .container {
