@@ -434,6 +434,16 @@ ul {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+@media (min-width: 769px) {
+  ul {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 769px) {
+  ul li {
+    margin-left: 10px;
+  }
+}
 
 .menu a {
   text-decoration: none;
@@ -453,10 +463,5 @@ ul {
   color: #C24935;
   font-weight: bold;
 }
-
-/*.title {
-    display: none;
-
-} */
 
 /*# sourceMappingURL=style.css.map */

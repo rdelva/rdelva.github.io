@@ -1,9 +1,28 @@
+.header-name {
+    
+
+}
+
 ul {
 	list-style-type: none;
 	padding:0;
 	@include flexBox(flex, row, nowrap) {
         justify-content: space-between;
+            @include mq(medium){
+                justify-content: flex-end;              
+
+            }
+
+            li {
+                @include mq(medium){
+                    margin-left:10px;
+
+                }
+            }
+
     }
+
+
 }
 
 .menu {
@@ -31,7 +50,3 @@ ul {
     }
    
 }
-/*.title {
-    display: none;
-
-} */
