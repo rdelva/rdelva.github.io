@@ -57,6 +57,12 @@ h2 { // my job title
     top: 500px;
     display: inline-block;
 
+
+    @include mq(medium) {
+        left: calc(100vh -10px);
+        top: 750px;
+    }
+
 	
 }
 
