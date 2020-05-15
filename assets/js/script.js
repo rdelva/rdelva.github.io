@@ -1,5 +1,6 @@
 const credit = document.getElementById('credit');
 const header = document.getElementById('header');
+const menuButton = document.getElementById('menu-button');
 
 console.log(document.documentURI);
 
@@ -12,3 +13,10 @@ console.log(document.pathname);
 if (document.url == 'index.html'){
     console.log('Homepage');
 }
+
+
+// toggle menu button
+
+menuButton.addEventListener('click', event => {
+    
+});
