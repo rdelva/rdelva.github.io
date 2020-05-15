@@ -1,7 +1,29 @@
-.title{
-    margin-top:50px;
-   
+#header {
+
+    &-name {
+        display: none;
+        @include mq(medium){
+            @include text(30px, $mojo);
+             font-family: $font-family--secondary;
+             display: inline-block;
+        }
+        
+    }
+
+    &-title {
+        display: none;
+        @include mq(medium){
+            @include text(25px, $mortar);
+             font-family: $font-family--primary;
+             display: inline;
+        }
+
+    }
+
 }
+
+
+
 
 
 h1 { // my name
@@ -33,6 +55,7 @@ h2 { // my job title
     position:relative;
     left: 130px;
     top: 500px;
+    display: inline-block;
 
 	
 }

@@ -1,7 +1,7 @@
-//Place holder where data is going to be displayed
+const credit = document.getElementById('credit');
+console.log(document.url);
 
-const main = document.getElementsByTagName('main');
-
-//=================================
-//Fetch Request
-//=================================
+//Changed featured determined by location
+if (document.url == 'index.html'){
+    console.log('Homepage');
+}

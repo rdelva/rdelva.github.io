@@ -384,8 +384,27 @@ footer {
   padding: 10px;
 }
 
-.title {
-  margin-top: 50px;
+#header-name {
+  display: none;
+}
+@media (min-width: 769px) {
+  #header-name {
+    font-size: 1.875em;
+    color: #C24935;
+    font-family: "Pacifico", cursive;
+    display: inline-block;
+  }
+}
+#header-title {
+  display: none;
+}
+@media (min-width: 769px) {
+  #header-title {
+    font-size: 1.5625em;
+    color: #4B4453;
+    font-family: "Raleway", sans-serif;
+    display: inline;
+  }
 }
 
 h1 {
@@ -418,12 +437,52 @@ h2 {
   position: relative;
   left: 130px;
   top: 500px;
+  display: inline-block;
 }
 
 p {
   font-family: "Raleway", sans-serif;
   font-size: 1em;
   color: 300;
+}
+
+@media (min-width: 769px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.logo:link {
+  text-decoration: none;
+}
+.logo:visited {
+  text-decoration: none;
+}
+
+@media (min-width: 769px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 769px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.header-homepage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 ul {
@@ -462,6 +521,10 @@ ul {
   font-size: 1em;
   color: #C24935;
   font-weight: bold;
+}
+
+img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
