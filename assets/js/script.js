@@ -12,7 +12,7 @@ if(header.classList.contains('header-homepage')){
 
 // toggle menu button
 
-
+//menu.style.display = 'none';  hide menu
 menuButton.addEventListener('click',  (e) => {
 
     

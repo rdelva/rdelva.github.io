@@ -460,25 +460,28 @@ header {
 
 #menu ul {
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 #menu ul li {
   padding: 10px;
+  text-align: center;
 }
 
-.menu a {
+#menu a {
   text-decoration: none;
 }
-.menu a:link {
+#menu a:link {
   font-size: 1em;
   color: #4B4453;
   font-weight: none;
 }
-.menu a:visited {
+#menu a:visited {
   font-size: 1em;
   color: #4B4453;
   font-weight: none;
 }
-.menu a:hover {
+#menu a:hover {
   font-size: 1em;
   color: #C24935;
   font-weight: bold;
@@ -491,6 +494,7 @@ header {
 #menu-button {
   align-self: flex-end;
   border: solid 1px #C24935;
+  border-radius: 10px;
 }
 #menu-button img {
   padding: 10px;
