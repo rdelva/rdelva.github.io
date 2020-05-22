@@ -1,4 +1,9 @@
 #menu-button {
-    @include flexBox(flex, row, nowrap);
-    justify-content: flex-end;
+   
+    align-self: flex-end;
+    border: solid 1px $mojo; 
+    
+    img {
+        padding:10px;
+    }   
 }

@@ -489,10 +489,11 @@ header {
 }
 
 #menu-button {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
+  align-self: flex-end;
+  border: solid 1px #C24935;
+}
+#menu-button img {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,7 +10,6 @@ if(header.classList.contains('header-homepage')){
 
 
 
-
 // toggle menu button
 
 
