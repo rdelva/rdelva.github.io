@@ -1,0 +1,4 @@
+#menu-button {
+    @include flexBox(flex, row, nowrap);
+    justify-content: flex-end;
+}

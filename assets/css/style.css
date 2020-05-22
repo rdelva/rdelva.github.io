@@ -452,65 +452,17 @@ p {
   color: 300;
 }
 
-header .menu {
-  display: none;
-}
-@media (min-width: 769px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-}
-
-.logo:link {
-  text-decoration: none;
-}
-.logo:visited {
-  text-decoration: none;
-}
-
-@media (min-width: 769px) {
-  .title {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-}
-
-@media (min-width: 769px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-.header-homepage {
+header {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
 }
-@media (min-width: 769px) {
-  ul {
-    justify-content: flex-end;
-  }
+
+#menu ul {
+  list-style-type: none;
 }
-@media (min-width: 769px) {
-  ul li {
-    margin-left: 10px;
-  }
+#menu ul li {
+  padding: 10px;
 }
 
 .menu a {
@@ -532,8 +484,15 @@ ul {
   font-weight: bold;
 }
 
-img {
+.img {
   max-width: 100%;
+}
+
+#menu-button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,74 +1,24 @@
 header {
-
-    .menu {
-        display:none;
-    }
-   
-    @include mq(medium){
-        @include flexBox(flex, row, nowrap);
-        justify-content: space-between;   
-    }
-}
-
-
-.logo {
     
-    &:link {
-        text-decoration: none;
-    }
-
-    &:visited {
-        text-decoration: none;
-    }
-}
-.title {
-    @include mq(medium){
-        @include flexBox(flex, column, nowrap);
-
-    }
+    @include flexBox(flex, column, nowrap);  
+     
 }
 
-header {
-    @include mq(medium){
-        @include flexBox(flex, row, wrap);
+#menu 
+    ul {
+        list-style-type: none;
 
-        
-    }
-    
-
-}
-
-.header-homepage {
-    @include flexBox(flex, row, wrap);
-    justify-content: flex-end;
-    
-}
-
-
-
-
-ul {
-	list-style-type: none;
-	padding:0;
-	@include flexBox(flex, row, nowrap) {
-        justify-content: space-between;
-            @include mq(medium){
-                justify-content: flex-end;              
-
-            }
-
-            li {
-                @include mq(medium){
-                    margin-left:10px;
-
-
-                }
-            }
-
+        li {
+            padding:10px;
+        }
+      
     }
 
 
-}
+
+
+
+
 
 .menu {
     a {
