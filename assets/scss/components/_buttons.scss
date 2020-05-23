@@ -1,7 +1,8 @@
 #menu-button {
    
-    align-self: flex-end;
+   
     border: solid 3px $mojo;
+    width:50px;
     border-radius:10px; 
     cursor: pointer;
     transition-property: border;
@@ -16,4 +17,8 @@
     img {
         padding:10px;
     }   
+}
+
+.homepage-button {
+    align-self: flex-end;
 }

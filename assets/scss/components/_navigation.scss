@@ -1,8 +1,29 @@
 header {
     
     @include flexBox(flex, column, nowrap);  
+
      
 }
+
+.homepage-logo {
+    @include flexBox(flex, row, nowrap) {
+        justify-content: flex-end;
+    }
+}
+
+
+.homepage-menu-show {
+    transition-property: height;
+    transition-duration: 20s;
+}
+
+.homepage-menu-hide {
+    transition-property: height;
+    transition-duration: 20s;
+}
+
+
+
 
 #menu 
     ul {
@@ -18,7 +39,7 @@ header {
         text-decoration: none;
         width: 100%;
         display: inline-block;
-        
+
         &:link {
             @include text(  16px , $color: $mortar, $weight: none);
         

@@ -3,24 +3,16 @@ const header = document.getElementById('header');
 const menuButton = document.getElementById('menu-button');
 const menu = document.getElementById('menu');
 
-if(header.classList.contains('header-homepage')){
-    
-}
 
 
 
 
-// toggle menu button
+//hide menu
+$(menu).hide();
 
-menu.style.display = 'none';  //hide menu
-menuButton.addEventListener('click',  (e) => {
+// slide toggle menu button
 
-    if(menu.style.display === 'none'){
-        menu.style.display = 'block';
-        console.log('hi');
-
-    } else {
-        menu.style.display = 'none';
-    }   
-
+$(menuButton).click(function(){
+    $(menu).slideToggle();
 });
+

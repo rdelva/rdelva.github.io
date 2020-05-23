@@ -1,46 +1,54 @@
-#header {
-
-    &-name {
-        display: none;
-        @include mq(medium){
-            @include text(30px, $mojo);
-             font-family: $font-family--secondary;
-             display: inline-block;
-        }
-        
-    }
-
-    &-title {
-        display: none;
-        @include mq(medium){
-            @include text(25px, $mortar);
-             font-family: $font-family--primary;
-             display: inline;
-        }
-
-    }
-
+.homepage-title {
+    
+   padding-top:80px;
+   text-align: center;
 }
-
 
 
 .title {
-    text-align: center;
-    padding-top: 30px;
+    @include flexBox(flex, column, nowrap){
+     @include text(20px, $mortar, bold);
+        font-family: $font-family--primary;
+    } 
+}
+.logo {
+    text-decoration: none;
 }
 
+#header {
+
+  
+
+    &-name {      
+       
+            @include text(25px, $mojo);
+             font-family: $font-family--secondary;
+             display: inline-block;
+     
+    }
+
+    &-title {
+        
+      
+            @include text(20px, $mortar);
+             font-family: $font-family--primary;
+             display: inline;
+      
+
+    }
+
+}
+
+
+
+
+
 h1 { // my name
-    @include text(60px, $mojo);
+   
+    @include text( 60px, $mojo);
     font-family: $font-family--secondary;
     padding:0px;
     margin:0px;
-    
-
-    @include mq(medium){
-   
-        @include text( 100px, $mojo);
-
-	}
 
 }
 
@@ -49,6 +57,7 @@ h2 { // my job title
     @include text(24px, $blueWhale);
     font-family: $font-family--primary;
 
+ 
 }
 
 
