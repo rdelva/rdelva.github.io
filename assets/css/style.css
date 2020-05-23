@@ -510,6 +510,12 @@ header {
   max-width: 100%;
 }
 
+.project-info {
+  background-color: #C24935;
+  height: 290px;
+  padding: 10px;
+}
+
 #menu-button {
   border: solid 3px #C24935;
   width: 50px;
