@@ -1,16 +1,61 @@
 .img {
     max-width: 100%;
   
+  
 }
 
 //Portfolio
 
 .project {
+    position: relative;
+    margin:10px 0;
+   
+   
      &-info {
+        padding:10px 0;
          background-color: $mojo;
-         height:290px;
+         height:100%;
+         width:100%;
          padding:10px;
-         
+         color: $white;
+         position: absolute;
+         z-index: 1;
+         top:0px;
+         left:0px;
+         right:0px;
+         bottom:0px;
+         opacity: .5;
+     }
+
+     &-title {
+         border-bottom: 1px solid $white;
+         width:100%;
+     }
+
+     &-text {
+         line-height: 30px;
+     }
+
+     a {
+         border: 1px solid $white;
+         border-radius:10px;
+         padding:10px;
+         text-decoration: none;
+
+         &:link {
+             color:$white;
+         }
+
+         &:visited {
+             color: $white;
+         }
+     }
+
+     .links {
+        @include flexBox(flex, row, nowrap){
+            justify-content: space-between;   
+        }
+        padding-top:50px
      }
 }
 

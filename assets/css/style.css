@@ -453,7 +453,7 @@ h2 {
 p {
   font-family: "Raleway", sans-serif;
   font-size: 1em;
-  color: 300;
+  font-weight: 300;
 }
 
 header {
@@ -510,10 +510,50 @@ header {
   max-width: 100%;
 }
 
+.project {
+  position: relative;
+  margin: 10px 0;
+}
 .project-info {
+  padding: 10px 0;
   background-color: #C24935;
-  height: 290px;
+  height: 100%;
+  width: 100%;
   padding: 10px;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0.5;
+}
+.project-title {
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+.project-text {
+  line-height: 30px;
+}
+.project a {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+.project a:link {
+  color: #fff;
+}
+.project a:visited {
+  color: #fff;
+}
+.project .links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-top: 50px;
 }
 
 #menu-button {
