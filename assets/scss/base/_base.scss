@@ -37,3 +37,14 @@ img {
 .container {
 	padding: 10px;
 }
+
+.portfolio, .about{
+	background-color: $westar;
+	height:100%;
+	opacity: .8;
+
+}
+
+.about {
+	line-height: 30px;
+}

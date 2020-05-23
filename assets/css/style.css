@@ -384,6 +384,16 @@ img {
   padding: 10px;
 }
 
+.portfolio, .about {
+  background-color: #DFDCD9;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.about {
+  line-height: 30px;
+}
+
 .homepage-title {
   padding-top: 80px;
   text-align: center;
@@ -515,7 +525,6 @@ header {
   margin: 10px 0;
 }
 .project-info {
-  padding: 10px 0;
   background-color: #C24935;
   height: 100%;
   width: 100%;
@@ -527,11 +536,18 @@ header {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  opacity: 0.5;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.project-info:hover {
+  opacity: 1;
 }
 .project-title {
   border-bottom: 1px solid #fff;
   width: 100%;
+  padding-bottom: 5px;
 }
 .project-text {
   line-height: 30px;
@@ -544,16 +560,23 @@ header {
 }
 .project a:link {
   color: #fff;
+  background-color: none;
+  transition-property: color, background-color;
+  transition-duration: 1s;
 }
 .project a:visited {
   color: #fff;
+}
+.project a:hover {
+  background-color: #fff;
+  color: #C24935;
 }
 .project .links {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding-top: 50px;
+  padding: 50px 40px 0 40px;
 }
 
 #menu-button {

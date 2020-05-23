@@ -12,7 +12,7 @@
    
    
      &-info {
-        padding:10px 0;
+     
          background-color: $mojo;
          height:100%;
          width:100%;
@@ -24,12 +24,23 @@
          left:0px;
          right:0px;
          bottom:0px;
-         opacity: .5;
+         opacity: 0;
+         transition-property: opacity; 
+        transition-duration: .5s;
+         transition-timing-function: ease-in-out;
+         
+           
+     }
+
+     &-info:hover {
+        opacity: 1;
+     
      }
 
      &-title {
          border-bottom: 1px solid $white;
          width:100%;
+         padding-bottom:5px;
      }
 
      &-text {
@@ -44,10 +55,19 @@
 
          &:link {
              color:$white;
+             background-color: none;
+             transition-property: color, background-color;
+             transition-duration: 1s;
+
          }
 
          &:visited {
              color: $white;
+         }
+
+         &:hover{
+             background-color: $white;
+             color: $mojo;
          }
      }
 
@@ -55,7 +75,7 @@
         @include flexBox(flex, row, nowrap){
             justify-content: space-between;   
         }
-        padding-top:50px
+        padding:50px 40px 0 40px; 
      }
 }
 
