@@ -11,15 +11,10 @@ header {
     }
 }
 
-
-.homepage-menu-show {
-    transition-property: height;
-    transition-duration: 20s;
-}
-
-.homepage-menu-hide {
-    transition-property: height;
-    transition-duration: 20s;
+.header-logo {
+    @include flexBox(flex, row, nowrap){
+        justify-content: space-between;
+    }
 }
 
 

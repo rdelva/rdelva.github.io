@@ -391,7 +391,7 @@ img {
 
 .title {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
   font-size: 1.25em;
   color: #4B4453;
@@ -406,14 +406,15 @@ img {
 #header-name {
   font-size: 1.5625em;
   color: #C24935;
+  padding-top: 20px;
   font-family: "Pacifico", cursive;
   display: inline-block;
 }
 #header-title {
+  display: none;
   font-size: 1.25em;
   color: #4B4453;
   font-family: "Raleway", sans-serif;
-  display: inline;
 }
 
 h1 {
@@ -468,14 +469,11 @@ header {
   justify-content: flex-end;
 }
 
-.homepage-menu-show {
-  transition-property: height;
-  transition-duration: 20s;
-}
-
-.homepage-menu-hide {
-  transition-property: height;
-  transition-duration: 20s;
+.header-logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 #menu ul {
