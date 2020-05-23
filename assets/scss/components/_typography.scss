@@ -65,9 +65,9 @@ h2 { // my job title
 	@include text(12px, $white, $font-weight--italic);
 	margin:0;
 	padding:0;
-    position:relative;
-    right: -90px;
-    bottom: 40px;
+    position:absolute;
+    right: 5px;
+    bottom: -32px;
     display: inline-block;
 
 

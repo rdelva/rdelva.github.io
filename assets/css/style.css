@@ -437,9 +437,9 @@ h2 {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  position: relative;
-  right: -90px;
-  bottom: 40px;
+  position: absolute;
+  right: 5px;
+  bottom: -32px;
   display: inline-block;
 }
 @media (min-width: 769px) {
