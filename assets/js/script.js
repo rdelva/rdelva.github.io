@@ -21,8 +21,6 @@ menuButton.addEventListener('click',  (e) => {
 
     } else {
         menu.style.display = 'none';
-    }
-    
-   
+    }   
 
 });

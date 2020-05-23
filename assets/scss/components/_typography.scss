@@ -24,13 +24,17 @@
 
 
 
-
+.title {
+    text-align: center;
+    padding-top: 30px;
+}
 
 h1 { // my name
     @include text(60px, $mojo);
     font-family: $font-family--secondary;
     padding:0px;
     margin:0px;
+    
 
     @include mq(medium){
    
@@ -49,12 +53,12 @@ h2 { // my job title
 
 
 .credit {
-	@include text(10px, $white, $font-weight--italic);
+	@include text(12px, $white, $font-weight--italic);
 	margin:0;
 	padding:0;
     position:relative;
-    left: 130px;
-    top: 500px;
+    right: -105px;
+    bottom: -630px;
     display: inline-block;
 
 

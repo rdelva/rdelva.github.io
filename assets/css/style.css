@@ -369,15 +369,11 @@ body, html, .wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: calc(100vh - 20px);
+  height: 100%;
 }
 
 body {
   font-family: "Raleway", sans-serif;
-}
-
-footer {
-  height: 100px;
 }
 
 .container {
@@ -407,6 +403,11 @@ footer {
   }
 }
 
+.title {
+  text-align: center;
+  padding-top: 30px;
+}
+
 h1 {
   font-size: 3.75em;
   color: #C24935;
@@ -429,14 +430,14 @@ h2 {
 }
 
 .credit {
-  font-size: 0.625em;
+  font-size: 0.75em;
   color: #fff;
   font-weight: 400;
   margin: 0;
   padding: 0;
   position: relative;
-  left: 130px;
-  top: 500px;
+  right: -105px;
+  bottom: -630px;
   display: inline-block;
 }
 @media (min-width: 769px) {
@@ -494,9 +495,14 @@ header {
 
 #menu-button {
   align-self: flex-end;
-  border: solid 1px #C24935;
+  border: solid 3px #C24935;
   border-radius: 10px;
   cursor: pointer;
+  transition-property: border;
+  transition-duration: 2ms;
+}
+#menu-button:hover {
+  border: solid 3px #23588D;
 }
 #menu-button img {
   padding: 10px;

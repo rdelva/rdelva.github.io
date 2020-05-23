@@ -1,10 +1,18 @@
 #menu-button {
    
     align-self: flex-end;
-    border: solid 1px $mojo;
+    border: solid 3px $mojo;
     border-radius:10px; 
     cursor: pointer;
+    transition-property: border;
+    transition-duration: 2ms;
+  
     
+    &:hover {
+        border: solid 3px #23588D;
+      
+    }
+
     img {
         padding:10px;
     }   

@@ -19,7 +19,7 @@ body, html, .wrapper {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	height: calc(100vh - 20px);
+	height: 100%;
 	
 
 }
@@ -30,9 +30,6 @@ body {
 }
 
 
-footer {
-	height:100px;
-}
 
 
 .container {
