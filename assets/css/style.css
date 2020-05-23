@@ -417,7 +417,7 @@ img {
 }
 
 h1 {
-  font-size: 3.75em;
+  font-size: 3.4375em;
   color: #C24935;
   font-family: "Pacifico", cursive;
   padding: 0px;
@@ -426,7 +426,7 @@ h1 {
 
 h2 {
   margin: 0px;
-  font-size: 1.5em;
+  font-size: 1.375em;
   color: #23588D;
   font-family: "Raleway", sans-serif;
 }
@@ -438,8 +438,8 @@ h2 {
   margin: 0;
   padding: 0;
   position: relative;
-  right: -105px;
-  bottom: -630px;
+  right: -90px;
+  bottom: 40px;
   display: inline-block;
 }
 @media (min-width: 769px) {
@@ -468,8 +468,14 @@ header {
   justify-content: flex-end;
 }
 
-.homepage-menu {
-  transition-property: display;
+.homepage-menu-show {
+  transition-property: height;
+  transition-duration: 20s;
+}
+
+.homepage-menu-hide {
+  transition-property: height;
+  transition-duration: 20s;
 }
 
 #menu ul {
@@ -487,19 +493,19 @@ header {
   display: inline-block;
 }
 #menu ul a:link {
-  font-size: 1em;
+  font-size: 1.25em;
   color: #4B4453;
   font-weight: none;
 }
 #menu ul a:visited {
-  font-size: 1em;
+  font-size: 1.25em;
   color: #4B4453;
   font-weight: none;
 }
 #menu ul a:hover {
-  font-size: 1em;
+  font-size: 1.25em;
   color: #C24935;
-  font-weight: bold;
+  font-weight: none;
 }
 
 .img {

@@ -45,7 +45,7 @@
 
 h1 { // my name
    
-    @include text( 60px, $mojo);
+    @include text( 55px, $mojo);
     font-family: $font-family--secondary;
     padding:0px;
     margin:0px;
@@ -54,7 +54,7 @@ h1 { // my name
 
 h2 { // my job title
     margin:0px;
-    @include text(24px, $blueWhale);
+    @include text(22px, $blueWhale);
     font-family: $font-family--primary;
 
  
@@ -66,8 +66,8 @@ h2 { // my job title
 	margin:0;
 	padding:0;
     position:relative;
-    right: -105px;
-    bottom: -630px;
+    right: -90px;
+    bottom: 40px;
     display: inline-block;
 
 
