@@ -13,24 +13,17 @@ header {
         li {
             padding:10px;
             text-align: center;
-        }
-      
-    }
-
-
-
-
-
-
-
-#menu {
+        }      
     a {
         text-decoration: none;
+        width: 100%;
+        display: inline-block;
+        
         &:link {
             @include text(  16px , $color: $mortar, $weight: none);
+        
         }        
         &:visited {
-            
             @include text(  16px , $color: $mortar, $weight: none);
         }
         &:hover {
