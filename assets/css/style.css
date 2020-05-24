@@ -583,6 +583,12 @@ header {
   padding: 5px 40px 0 40px;
 }
 
+.social img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
 #menu-button {
   border: solid 3px #C24935;
   width: 50px;
@@ -600,6 +606,34 @@ header {
 
 .homepage-button {
   align-self: flex-end;
+}
+
+input {
+  width: 100%;
+  margin: 10px 0px;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+}
+
+textarea {
+  width: 100%;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  height: 250px;
+  background-color: #fff;
+}
+
+[type=submit] {
+  display: block;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  background-color: #C24935;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

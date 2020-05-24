@@ -1,0 +1,29 @@
+input {
+    width:100%;
+    margin:10px 0px;
+    border-radius: 5px;
+    padding:10px;
+    border:none;
+}
+
+textarea{
+    width:100%;
+    margin:10px 0px;
+    border-radius: 5px;
+    border-radius: 5px;
+    padding:10px;
+    border:none;
+    height:250px;
+    background-color: $white;
+
+
+}
+[type='submit'] {
+    display:block;
+    border-radius: 5px;
+    padding:10px;
+    width:100%;
+    background-color: $mojo;
+    color: $white;
+
+}
