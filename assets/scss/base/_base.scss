@@ -40,11 +40,12 @@ img {
 
 .portfolio, .about{
 	background-color: $westar;
-	height:100%;
-	opacity: .8;
-
+	height:auto;
 }
 
 .about {
 	line-height: 30px;
+	height:100%;
+	opacity: .9;
+
 }

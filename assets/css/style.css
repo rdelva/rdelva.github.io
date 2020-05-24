@@ -386,12 +386,13 @@ img {
 
 .portfolio, .about {
   background-color: #DFDCD9;
-  height: 100%;
-  opacity: 0.8;
+  height: auto;
 }
 
 .about {
   line-height: 30px;
+  height: 100%;
+  opacity: 0.9;
 }
 
 .homepage-title {
