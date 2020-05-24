@@ -526,9 +526,12 @@ header {
   margin: 10px 0;
 }
 .project-info {
+  font-size: 0.75em;
+  color: #fff;
   background-color: #C24935;
   height: 100%;
   width: 100%;
+  max-width: 100%;
   padding: 10px;
   color: #fff;
   position: absolute;
@@ -551,7 +554,7 @@ header {
   padding-bottom: 5px;
 }
 .project-text {
-  line-height: 30px;
+  line-height: 20px;
 }
 .project a {
   border: 1px solid #fff;
@@ -577,7 +580,7 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 50px 40px 0 40px;
+  padding: 5px 40px 0 40px;
 }
 
 #menu-button {
