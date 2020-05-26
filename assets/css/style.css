@@ -392,7 +392,6 @@ img {
 .about {
   line-height: 30px;
   height: 100%;
-  opacity: 0.9;
 }
 
 .homepage-title {
@@ -614,6 +613,11 @@ input {
   border-radius: 5px;
   padding: 10px;
   border: none;
+  transition-property: border;
+  transition-duration: 0.5s;
+}
+input:focus {
+  border-bottom: 3px solid #C24935;
 }
 
 textarea {
@@ -625,6 +629,11 @@ textarea {
   border: none;
   height: 250px;
   background-color: #fff;
+  transition-property: border;
+  transition-duration: 0.5s;
+}
+textarea:focus {
+  border-bottom: 3px solid #C24935;
 }
 
 [type=submit] {
@@ -634,6 +643,12 @@ textarea {
   width: 100%;
   background-color: #C24935;
   color: #fff;
+  border: none;
+}
+[type=submit]:hover {
+  background-color: #fff;
+  color: #C24935;
+  border-color: 1px solid #C24935;
 }
 
 /*# sourceMappingURL=style.css.map */

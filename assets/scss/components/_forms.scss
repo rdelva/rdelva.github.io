@@ -4,6 +4,12 @@ input {
     border-radius: 5px;
     padding:10px;
     border:none;
+    transition-property: border;
+    transition-duration: .5s;
+
+    &:focus {
+        border-bottom:3px solid $mojo;
+    }
 }
 
 textarea{
@@ -15,9 +21,14 @@ textarea{
     border:none;
     height:250px;
     background-color: $white;
-
-
+    transition-property: border;
+    transition-duration: .5s;
+    &:focus {
+        border-bottom:3px solid $mojo;
+    }
 }
+
+
 [type='submit'] {
     display:block;
     border-radius: 5px;
@@ -25,5 +36,13 @@ textarea{
     width:100%;
     background-color: $mojo;
     color: $white;
+    border:none;
+
+    &:hover {
+        background-color: $white;
+        color: $mojo;
+        border-color: 1px solid $mojo;
+
+    }
 
 }
