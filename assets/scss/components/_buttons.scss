@@ -17,6 +17,10 @@
     img {
         padding:10px;
     }   
+
+    @include mq(medium){
+        display: none;
+    }
 }
 
 .homepage-button {

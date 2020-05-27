@@ -1,18 +1,19 @@
-input {
+input[type="text"], input[type="email"]{
     width:100%;
-    margin:10px 0px;
-    border-radius: 5px;
-    padding:10px;
-    border:none;
+    margin:10px 0px 10px 0;
+    outline: none;
+    padding: 10px  10px 10px 30px;           
+    border: none;
     transition-property: border;
-    transition-duration: .5s;
+    transition-duration: .3s;
+
 
     &:focus {
-        border-bottom:3px solid $mojo;
+        border-bottom:1px solid $mojo;
     }
 }
 
-textarea{
+textarea {
     width:100%;
     margin:10px 0px;
     border-radius: 5px;
@@ -21,6 +22,7 @@ textarea{
     border:none;
     height:250px;
     background-color: $white;
+    outline: none;
     transition-property: border;
     transition-duration: .5s;
     &:focus {
@@ -28,6 +30,9 @@ textarea{
     }
 }
 
+[type='placeholder'] {
+    padding-left:20px;
+}
 
 [type='submit'] {
     display:block;

@@ -398,6 +398,12 @@ img {
   padding-top: 80px;
   text-align: center;
 }
+@media (min-width: 769px) {
+  .homepage-title {
+    text-align: initial;
+    padding-top: 10px;
+  }
+}
 
 .title {
   display: flex;
@@ -434,12 +440,22 @@ h1 {
   padding: 0px;
   margin: 0px;
 }
+@media (min-width: 769px) {
+  h1 {
+    font-size: 6.25em;
+  }
+}
 
 h2 {
   margin: 0px;
   font-size: 1.375em;
   color: #23588D;
   font-family: "Raleway", sans-serif;
+}
+@media (min-width: 769px) {
+  h2 {
+    font-size: 3.75em;
+  }
 }
 
 .credit {
@@ -520,9 +536,23 @@ header {
   max-width: 100%;
 }
 
+@media (min-width: 769px) {
+  .portfolio section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .project {
   position: relative;
   margin: 10px 0;
+}
+@media (min-width: 769px) {
+  .project {
+    width: 45%;
+  }
 }
 .project-info {
   font-size: 0.75em;
@@ -590,13 +620,18 @@ header {
 
 .input-wrapper {
   width: 100%;
+  position: relative;
 }
 
-.icon-user {
-  background-image: url("assets/img/svg/name.svg");
-  width: 50px;
-  height: 50px;
-  z-index: 1;
+.icon {
+  position: absolute;
+  color: #C24935;
+  top: 20px;
+  left: 5px;
+}
+
+.icon:focus {
+  color: #23588D;
 }
 
 #menu-button {
@@ -613,22 +648,27 @@ header {
 #menu-button img {
   padding: 10px;
 }
+@media (min-width: 769px) {
+  #menu-button {
+    display: none;
+  }
+}
 
 .homepage-button {
   align-self: flex-end;
 }
 
-input {
+input[type=text], input[type=email] {
   width: 100%;
-  margin: 10px 0px;
-  border-radius: 5px;
-  padding: 10px;
+  margin: 10px 0px 10px 0;
+  outline: none;
+  padding: 10px 10px 10px 30px;
   border: none;
   transition-property: border;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
-input:focus {
-  border-bottom: 3px solid #C24935;
+input[type=text]:focus, input[type=email]:focus {
+  border-bottom: 1px solid #C24935;
 }
 
 textarea {
@@ -640,11 +680,16 @@ textarea {
   border: none;
   height: 250px;
   background-color: #fff;
+  outline: none;
   transition-property: border;
   transition-duration: 0.5s;
 }
 textarea:focus {
   border-bottom: 3px solid #C24935;
+}
+
+[type=placeholder] {
+  padding-left: 20px;
 }
 
 [type=submit] {
