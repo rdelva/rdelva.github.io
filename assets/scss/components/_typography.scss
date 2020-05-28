@@ -5,7 +5,7 @@
 
    @include mq(medium){
        text-align: initial;
-       padding-top:10px;
+       padding-left:40px;
 
    }
 }
@@ -57,7 +57,7 @@ h1 { // my name
     padding:0px;
     margin:0px;
     @include mq(medium){
-        @include text(100px);
+        @include text(150px);
  
     }
 
@@ -67,8 +67,10 @@ h2 { // my job title
     margin:0px;
     @include text(22px, $blueWhale);
     font-family: $font-family--primary;
+
     @include mq(medium){
-        @include text(60px);
+        padding-left:100px;
+        @include text(40px, null, $font-weight--light);
  
     }
  

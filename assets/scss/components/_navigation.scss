@@ -1,8 +1,21 @@
 header {
     
     @include flexBox(flex, column, nowrap);  
-
+  
+    @include mq(medium){
+        @include flexBox(flex, row, nowrap) {
+            justify-content: space-between;
+        }  
+    }
      
+}
+
+.homepage-header{
+    @include mq(medium){
+        @include flexBox(flex, row, nowrap) {
+            justify-content: flex-end;
+        }  
+    }
 }
 
 .homepage-logo {
@@ -18,33 +31,50 @@ header {
 }
 
 
+.hide {
+    display:none;
+}
+
+.show {
+    display:flex;
+}
 
 
-#menu 
+#menu {
+    display:none;
+    @include mq(medium) {
+        display: block;
+    }
+
     ul {
         list-style-type: none;
         margin:0px;
         padding:0px;
 
+        @include mq(medium) {
+            @include flexBox(flex, row, nowrap);
+        }
+
         li {
             padding:10px;
             text-align: center;
         }      
-    a {
-        text-decoration: none;
-    
-        width: 100%;
-        display: inline-block;
+            a {
+                text-decoration: none;
+            
+                width: 100%;
+                display: inline-block;
 
-        &:link {
-            @include text(  20px , $color: $mortar, $weight: none);
-        
-        }        
-        &:visited {
-            @include text(  20px , $color: $mortar, $weight: none);
-        }
-        &:hover {
-            @include text(  20px , $color: $mojo, $weight: none);
-        }
-    }   
+                &:link {
+                    @include text(  20px , $color: $mortar, $weight: none);
+                
+                }        
+                &:visited {
+                    @include text(  20px , $color: $mortar, $weight: none);
+                }
+                &:hover {
+                    @include text(  20px , $color: $mojo, $weight: none);
+                }
+            }   
+    }
 }

@@ -6,13 +6,10 @@ const menu = document.getElementById('menu');
 
 
 
-
-//hide menu
-$(menu).hide();
-
-// slide toggle menu button
-
-$(menuButton).click(function(){
-    $(menu).slideToggle();
+menuButton.addEventListener('click', (e) => {
+    if(menu.style.display == 'none'){
+        menu.style.display = 'block';
+    } else {
+        menu.style.display = 'none';
+    }
 });
-

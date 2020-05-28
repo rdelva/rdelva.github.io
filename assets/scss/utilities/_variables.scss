@@ -1,6 +1,6 @@
 //Font Stacks
 
-$font-url--google			: 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap';
+$font-url--google			: 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap';
 $font-url--google2			: 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap';
 
 $font-family--primary		: 'Raleway', sans-serif;
@@ -57,35 +57,7 @@ $brkpoint-m					: 768px;
 $brkpoint-lg				: 1400px;	
 
 
-//UI Colors
 
-$ui-colors: (
-	default					: $malibuBlue,
-	success					: $emerald,
-	error					: $sunglo,
-	warning					: $coral,
-	info					: $purpleMountain	
-);
-
-
-//Background Images
-
-//Grid Colors
-/*
-$grid-colors: (
-	'3'			: $lilac,
-	'4'	 		: $malibuBlue,
-	'5'			: $emerald,
-	'6'			: $shakespeare,
-	'7'			: $seaPink,
-	'8'	 		: $vividTangerine,
-	'12'		: $turquoiseBlue,
-	
-	
-	
-);
-*/
-//Grid
 
 $g-col-width				: 65px;
 $g-gutter-width				: 20px;
