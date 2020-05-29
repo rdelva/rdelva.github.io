@@ -1,3 +1,20 @@
+form {
+
+}
+
+.contactInfo{
+    @include mq(medium){
+        @include flexBox(flex, row, nowrap){
+            justify-content: space-between;
+        }
+    }
+}
+
+.input-wrapper:first-child{
+    margin-right:10px;
+}
+
+
 input[type="text"], input[type="email"]{
     width:100%;
     margin:10px 0px 10px 0;
@@ -12,6 +29,9 @@ input[type="text"], input[type="email"]{
         border-bottom:1px solid $mojo;
     }
 }
+
+
+
 
 textarea {
     width:100%;
@@ -51,3 +71,6 @@ textarea {
     }
 
 }
+
+
+

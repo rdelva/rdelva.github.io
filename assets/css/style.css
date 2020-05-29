@@ -412,6 +412,11 @@ img {
   font-family: "Pacifico", cursive;
   display: inline-block;
 }
+@media (min-width: 769px) {
+  #header-name {
+    padding-top: 10px;
+  }
+}
 #header-title {
   display: none;
   font-size: 1.25em;
@@ -446,6 +451,11 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 1.875em;
+  font-weight: 300;
+}
+
 .credit {
   font-size: 0.75em;
   color: #fff;
@@ -459,8 +469,7 @@ h2 {
 }
 @media (min-width: 769px) {
   .credit {
-    left: calc(100vh -10px);
-    top: 750px;
+    bottom: 0px;
   }
 }
 
@@ -684,6 +693,19 @@ header {
 
 .homepage-button {
   align-self: flex-end;
+}
+
+@media (min-width: 769px) {
+  .contactInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.input-wrapper:first-child {
+  margin-right: 10px;
 }
 
 input[type=text], input[type=email] {

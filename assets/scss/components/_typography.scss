@@ -31,7 +31,9 @@
             padding-top:20px;
              font-family: $font-family--secondary;
              display: inline-block;
-     
+            @include mq(medium) {
+                padding-top:10px;
+            }
     }
 
     &-title {
@@ -76,6 +78,10 @@ h2 { // my job title
  
 }
 
+h3 {
+    @include text(30px, null, $font-weight--light);
+}
+
 
 .credit {
 	@include text(12px, $white, $font-weight--italic);
@@ -88,8 +94,8 @@ h2 { // my job title
 
 
     @include mq(medium) {
-        left: calc(100vh -10px);
-        top: 750px;
+       
+        bottom:0px;
     }
 
 	
