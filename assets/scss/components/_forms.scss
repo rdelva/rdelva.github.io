@@ -1,7 +1,3 @@
-form {
-
-}
-
 .contactInfo{
     @include mq(medium){
         @include flexBox(flex, row, nowrap){
