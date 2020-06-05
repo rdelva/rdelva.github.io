@@ -1,6 +1,6 @@
 .homepage-title {
     
-   padding-top:80px;
+   padding-top:50px;
    text-align: center;
 
    @include mq(medium){
@@ -72,7 +72,7 @@ h2 { // my job title
 
     @include mq(medium){
         padding-left:100px;
-        @include text(40px, null, $font-weight--light);
+        @include text(40px, null, $font-weight--medium);
  
     }
  
