@@ -1,6 +1,6 @@
 .homepage-title {
     
-   padding-top:30px;
+   padding-top:50px;
    text-align: center;
 
    
@@ -57,7 +57,7 @@
 
 h1 { // my name
    
-    @include text( 55px, $mojo);
+    @include text( 50px, $mojo);
     font-family: $font-family--secondary;
     padding:0px;
     margin:0px;

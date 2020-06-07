@@ -31,15 +31,6 @@ header {
 }
 
 
-.hide {
-    display:none;
-}
-
-.show {
-    display:flex;
-}
-
-
 #menu {
     display:none;
     @include mq(medium) {
