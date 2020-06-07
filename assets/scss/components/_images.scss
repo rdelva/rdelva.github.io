@@ -7,6 +7,13 @@
 //Portfolio
 
 .portfolio section {
+
+    @include mq(small){
+        @include flexBox(flex, row, wrap){
+            justify-content: space-between;
+            padding:10px;
+        }
+    }
     @include mq(medium){
         @include flexBox(flex, row, wrap){
             justify-content: space-around;
@@ -17,9 +24,14 @@
 .project {
     position: relative;
     margin:10px 0;
+
+    @include mq(small){
+        width:45%;      
+
+    }
+    
     @include mq(medium){
-        width:45%;
-       
+        width:45%;      
 
     }
    

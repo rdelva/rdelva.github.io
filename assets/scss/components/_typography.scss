@@ -3,11 +3,14 @@
    padding-top:50px;
    text-align: center;
 
+   
+
    @include mq(medium){
        text-align: initial;
        padding-left:40px;
-
+       padding-top:35px;
    }
+   
 }
 
 
@@ -58,6 +61,17 @@ h1 { // my name
     font-family: $font-family--secondary;
     padding:0px;
     margin:0px;
+
+    @include mq(xsmall) {
+        @include text(70px);
+ 
+    }
+
+    @include mq(small){
+        @include text(80px);
+ 
+    }
+
     @include mq(medium){
         @include text(150px);
  
@@ -69,6 +83,11 @@ h2 { // my job title
     margin:0px;
     @include text(22px, $blueWhale);
     font-family: $font-family--primary;
+   
+    @include mq(xsmall) {
+        @include text(25px);
+ 
+    }
 
     @include mq(medium){
         padding-left:100px;

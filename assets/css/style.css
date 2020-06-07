@@ -388,6 +388,7 @@ img {
   .homepage-title {
     text-align: initial;
     padding-left: 40px;
+    padding-top: 35px;
   }
 }
 
@@ -431,6 +432,16 @@ h1 {
   padding: 0px;
   margin: 0px;
 }
+@media (min-width: 375px) and (max-width: 640px) {
+  h1 {
+    font-size: 4.375em;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  h1 {
+    font-size: 5em;
+  }
+}
 @media (min-width: 769px) {
   h1 {
     font-size: 9.375em;
@@ -442,6 +453,11 @@ h2 {
   font-size: 1.375em;
   color: #23588D;
   font-family: "Raleway", sans-serif;
+}
+@media (min-width: 375px) and (max-width: 640px) {
+  h2 {
+    font-size: 1.5625em;
+  }
 }
 @media (min-width: 769px) {
   h2 {
@@ -573,6 +589,15 @@ header {
   max-width: 100%;
 }
 
+@media (min-width: 640px) and (max-width: 768px) {
+  .portfolio section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+  }
+}
 @media (min-width: 769px) {
   .portfolio section {
     display: flex;
@@ -586,6 +611,11 @@ header {
 .project {
   position: relative;
   margin: 10px 0;
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .project {
+    width: 45%;
+  }
 }
 @media (min-width: 769px) {
   .project {
