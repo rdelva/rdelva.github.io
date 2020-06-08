@@ -750,8 +750,10 @@ header {
 }
 
 #menu-button {
-  transition-property: color;
-  transition-duration: 2ms;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-self: flex-end;
   cursor: pointer;
 }

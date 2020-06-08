@@ -5,6 +5,7 @@
     fill: currentColor;
 
 
+
     &:hover {
         color: #23588D;
         fill: currentColor;
@@ -15,18 +16,6 @@
 
 
 #menu-button {
-   
-    transition-property: color;
-    transition-duration: 2ms;
-    align-self: flex-end;
-    cursor: pointer;
-  
-    
-    &:hover {
-       // border: solid 3px #23588D;
-       fill: currentColor;
-      
-    }
   
 
     @include mq(medium){
