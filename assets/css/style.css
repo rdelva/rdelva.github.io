@@ -738,31 +738,30 @@ header {
   color: #23588D;
 }
 
+#hamburger {
+  height: 40px;
+  width: 40px;
+  color: #C24935;
+  fill: currentColor;
+}
+#hamburger:hover {
+  color: #23588D;
+  fill: currentColor;
+}
+
 #menu-button {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  border: solid 3px #C24935;
-  border-radius: 10px;
-  cursor: pointer;
-  transition-property: border;
+  transition-property: color;
   transition-duration: 2ms;
+  align-self: flex-end;
+  cursor: pointer;
 }
 #menu-button:hover {
-  border: solid 3px #23588D;
-}
-#menu-button img {
-  padding: 10px;
+  fill: currentColor;
 }
 @media (min-width: 769px) {
   #menu-button {
     display: none;
   }
-}
-
-.homepage-button {
-  align-self: flex-end;
 }
 
 @media (min-width: 769px) {

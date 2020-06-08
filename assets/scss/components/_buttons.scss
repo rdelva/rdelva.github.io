@@ -1,30 +1,36 @@
+#hamburger {
+    height:40px;
+    width:40px;
+    color:  $mojo;
+    fill: currentColor;
+
+
+    &:hover {
+        color: #23588D;
+        fill: currentColor;
+      
+    }
+}
+
+
+
 #menu-button {
    
-   @include flexBox(flex, column, nowrap){
-        justify-content: center;
-   }
-    border: solid 3px $mojo;
-    
-    border-radius:10px; 
-    cursor: pointer;
-    transition-property: border;
+    transition-property: color;
     transition-duration: 2ms;
+    align-self: flex-end;
+    cursor: pointer;
   
     
     &:hover {
-        border: solid 3px #23588D;
+       // border: solid 3px #23588D;
+       fill: currentColor;
       
     }
-
-    img {
-        padding:10px;
-    }   
+  
 
     @include mq(medium){
         display: none;
     }
 }
 
-.homepage-button {
-    align-self: flex-end;
-}
