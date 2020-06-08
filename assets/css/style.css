@@ -520,6 +520,18 @@ header {
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.sticky + .bg {
+  padding-top: 150px;
+}
+
 @media (min-width: 769px) {
   .homepage-header {
     display: flex;

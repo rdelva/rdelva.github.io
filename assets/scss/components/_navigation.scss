@@ -10,7 +10,20 @@ header {
      
 }
 
-.homepage-header{
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color:$white;
+
+  }
+
+ .sticky + .bg {
+    padding-top: 150px;
+  }
+
+.homepage-header{   
     @include mq(medium){
         @include flexBox(flex, row, nowrap) {
             justify-content: flex-end;
