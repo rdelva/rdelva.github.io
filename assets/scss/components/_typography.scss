@@ -81,7 +81,7 @@ h1 { // my name
 
 h2 { // my job title
     margin:0px;
-    @include text(22px, $blueWhale);
+    @include text(22px, $blueWhale, $font-weight--light);
     font-family: $font-family--primary;
    
     @include mq(xsmall) {
@@ -103,13 +103,21 @@ h3 {
 
 
 .credit {
-	@include text(12px, $white, $font-weight--italic);
-	margin:0;
-	padding:0;
-    position:absolute;
+	@include text(15px, $white, $font-weight--light);
+	margin: 0;
+	padding: 0;
+    position: absolute;
     right: 5px;
     bottom: -32px;
     display: inline-block;
+    text-decoration: none;
+    
+    &:link {
+        @include text(15px, $mojo, $font-weight--light);
+    }
+    &:hover {
+        @include text(15px, $mojo, $font-weight--light);
+    }
 
 
     @include mq(medium) {

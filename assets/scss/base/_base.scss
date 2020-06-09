@@ -51,10 +51,15 @@ img {
 }
 
 .portfolio, .about{
+	
+	
+	
+}
+
+.overlay {
 	background-color: $westar;
-	height:auto;
-	
-	
+	height: calc(100vh - 0px);
+
 }
 
 

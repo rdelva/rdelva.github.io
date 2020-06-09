@@ -381,9 +381,9 @@ img {
   padding: 10px;
 }
 
-.portfolio, .about {
+.overlay {
   background-color: #DFDCD9;
-  height: auto;
+  height: calc(100vh - 0px);
 }
 
 .about {
@@ -463,6 +463,7 @@ h2 {
   margin: 0px;
   font-size: 1.375em;
   color: #23588D;
+  font-weight: 300;
   font-family: "Raleway", sans-serif;
 }
 @media (min-width: 375px) and (max-width: 640px) {
@@ -484,15 +485,26 @@ h3 {
 }
 
 .credit {
-  font-size: 0.75em;
+  font-size: 0.9375em;
   color: #fff;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   position: absolute;
   right: 5px;
   bottom: -32px;
   display: inline-block;
+  text-decoration: none;
+}
+.credit:link {
+  font-size: 0.9375em;
+  color: #C24935;
+  font-weight: 300;
+}
+.credit:hover {
+  font-size: 0.9375em;
+  color: #C24935;
+  font-weight: 300;
 }
 @media (min-width: 769px) {
   .credit {
@@ -587,17 +599,17 @@ header {
 #menu ul a:link {
   font-size: 1.25em;
   color: #4B4453;
-  font-weight: none;
+  font-weight: 300;
 }
 #menu ul a:visited {
   font-size: 1.25em;
   color: #4B4453;
-  font-weight: none;
+  font-weight: 300;
 }
 #menu ul a:hover {
   font-size: 1.25em;
   color: #C24935;
-  font-weight: none;
+  font-weight: 300;
 }
 
 .img {
@@ -605,7 +617,7 @@ header {
 }
 
 @media (min-width: 640px) and (max-width: 768px) {
-  .portfolio section {
+  .portfolio {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -614,7 +626,7 @@ header {
   }
 }
 @media (min-width: 769px) {
-  .portfolio section {
+  .portfolio {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -712,8 +724,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 5px 40px 0 40px;
+  justify-content: space-around;
 }
 
 .social img {
@@ -749,17 +760,6 @@ header {
   fill: currentColor;
 }
 
-#menu-button {
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-self: flex-end;
-  cursor: pointer;
-}
-#menu-button:hover {
-  fill: currentColor;
-}
 @media (min-width: 769px) {
   #menu-button {
     display: none;

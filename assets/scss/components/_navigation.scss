@@ -71,14 +71,14 @@ header {
                 display: inline-block;
 
                 &:link {
-                    @include text(  20px , $color: $mortar, $weight: none);
+                    @include text(  20px , $color: $mortar, $weight: $font-weight--light);
                 
                 }        
                 &:visited {
-                    @include text(  20px , $color: $mortar, $weight: none);
+                    @include text(  20px , $color: $mortar, $weight: $font-weight--light);
                 }
                 &:hover {
-                    @include text(  20px , $color: $mojo, $weight: none);
+                    @include text(  20px , $color: $mojo, $weight: $font-weight--light);
                 }
             }   
     }
