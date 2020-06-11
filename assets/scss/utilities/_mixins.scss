@@ -1,3 +1,55 @@
+
+//BEM Elements
+
+@mixin e($element) {
+	&__#{$element}{
+		@content;
+	}
+}
+
+@mixin m($modifier) {
+	&--#{$modifier}{
+		@content;
+	}
+}
+
+
+
+// Adjacent sibling margins
+
+@mixin doubly($margin: 1em) {
+	& + & {
+	  margin-left: $margin;
+    @content;
+	}
+}
+
+@mixin g-columns {
+  // Calculate grid columns
+
+@for $i from 1 through $g-col-count {
+  
+  $context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
+
+  $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+ 
+  // Generate column modifier classes
+    &--#{$i} {
+      width: percentage($target / $context);
+     
+
+      @content;
+
+    }
+   
+  }          
+          
+}        
+        
+
+
+
+
 @mixin flexBox($disp, $flexDir, $flexWrap){
     display: $disp;
     flex-direction: $flexDir;
