@@ -23,17 +23,7 @@
 	
 
 }
-/*
-.overlay {
-	background-color: rgba(255, 255, 255, 0.205);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-	height: 100%;
-	z-index: 1;
-}
-*/
+
 body {
 	font-family: $font-family--primary;
 }
@@ -50,16 +40,15 @@ img {
 
 }
 
-.portfolio, .about{
-	
-	
+.whiteout{
+	background-color:rgba(255, 255, 255, 0.3);
+	height: calc(100vh - 0px);
 	
 }
 
 .overlay {
 	background-color: $westar;
-	height: calc(100vh - 0px);
-
+	height: auto;
 }
 
 
@@ -67,7 +56,11 @@ img {
 
 .about {
 	line-height: 30px;
-	height:100%;
+	height: 100vh;
+	@include flexBox(flex, row, nowrap);
 	
+}
 
+.bio {
+	
 }
