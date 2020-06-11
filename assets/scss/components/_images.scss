@@ -1,6 +1,5 @@
 .img {
-    max-width: 100%;
-  
+    max-width: 100%; 
   
 }
 
@@ -30,7 +29,7 @@
         width:45%;      
 
     }
-    
+
     @include mq(medium){
         width:45%;      
 
@@ -38,8 +37,7 @@
    
    
      &-info {
-        @include text(12px, $white, null);
-       
+        @include text(12px, $white, null);       
          background-color: rgba(192, 74, 53, 0.93);
          height:100%;
          width:100%;
@@ -57,14 +55,22 @@
          transition-duration: .5s;
          transition-timing-function: ease-in-out;
 
+         @include mq(xsmall){
+            @include text(15px);
+            line-height: 30px;
+            
+        } 
+
         @include mq(medium){
             @include text(20px);
             
         }
         @include mq(large){
-            @include text(30px);
+            @include text(40px);
             padding:20px;
         }
+
+        
          
            
      }
@@ -82,11 +88,14 @@
 
      &-text {
         line-height: 20px;
+        @include mq(xsmall){
+            line-height: 30px;
+        }
         @include mq(medium){
             line-height: 30px;
         }
         @include mq(large){
-            line-height: 40px;
+            line-height: 60px;
         }
         
      }
@@ -94,7 +103,7 @@
      a {
          border: 1px solid $white;
          border-radius:10px;
-         padding:20px;
+         padding:10px 30px;
          text-decoration: none;
 
          &:link {
@@ -118,7 +127,14 @@
      .links {
         @include flexBox(flex, row, nowrap){
             justify-content: space-around;   
+            margin-top: 50px;
+
+            @include mq(xsmall){
+                margin-top:px;
+            }
         }
+
+       
       
      }
 

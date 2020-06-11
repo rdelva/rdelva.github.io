@@ -93,17 +93,24 @@
         	@content;
     	}
 	}
-	@else if $break == 'medium'{
+	@else if $break == "medium" {
+		@media (min-width:$brkpoint-m) and (max-width: $brkpoint-lg){
+        	@content;
+    	}
+	}
+	@else if $break == 'large'{
 		@media (min-width:$brkpoint-m + 1){
           @content;
      	}
 	}
 
-	@else if $break == "large" {
-      @media (min-width:$brkpoint-lg) {
+	@else if $break == "xlarge" {
+      @media (min-width:$brkpoint-xlg) {
           @content;
       }
-  	} 
+	  } 
+	  
+	  
    	@else  {
       @error "Whoops! No value could be retrieved for] ' #{$break}  ' "
     
