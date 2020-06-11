@@ -34,6 +34,20 @@
         width:45%;      
 
     }
+    @include mq(large){
+        width:45%;      
+
+    }
+   
+    @include mq(xlarge){
+        width:45%;      
+
+    }
+   
+    @include mq(xxlarge){
+        width:45%;      
+
+    }
    
    
      &-info {
@@ -56,20 +70,25 @@
          transition-timing-function: ease-in-out;
 
          @include mq(xsmall){
-            @include text(15px);
+            @include text(14px, null, null);
             line-height: 30px;
             
         } 
 
         @include mq(medium){
-            @include text(20px);
+            @include text(14px, null, null);
+            line-height: 15px;
             
         }
         @include mq(large){
-            @include text(40px);
+            @include text(25px);
             padding:20px;
         }
 
+        @include mq(xlarge){
+            @include text(50px);
+            padding:20px;
+        }
         
          
            
@@ -107,9 +126,8 @@
          text-decoration: none;
 
          &:link {
-             color:$white;
-             background-color: none;
-             transition-property: color, background-color;
+             color:$white;           
+             transition-property: color, backgroundcolor;
              transition-duration: 1s;
 
          }
@@ -127,10 +145,10 @@
      .links {
         @include flexBox(flex, row, nowrap){
             justify-content: space-around;   
-            margin-top: 50px;
+            margin-top: 30px;
 
-            @include mq(xsmall){
-                margin-top:px;
+            @include mq(medium){
+                margin-top: 20px;
             }
         }
 

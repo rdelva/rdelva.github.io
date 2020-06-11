@@ -98,17 +98,23 @@
         	@content;
     	}
 	}
-	@else if $break == 'large'{
-		@media (min-width:$brkpoint-m + 1){
+	@else if $break == "large" {
+		@media (min-width:$brkpoint-lg) and (max-width: $brkpoint-xlg){
+        	@content;
+    	}
+	}
+	@else if $break == "xlarge" {
+		@media (min-width:$brkpoint-xlg) and (max-width: $brkpoint-xxlg){
+        	@content;
+    	}
+	}
+	@else if $break == 'xxlarge'{
+		@media (min-width:$brkpoint-xxlg + 1){
           @content;
      	}
 	}
 
-	@else if $break == "xlarge" {
-      @media (min-width:$brkpoint-xlg) {
-          @content;
-      }
-	  } 
+
 	  
 	  
    	@else  {
