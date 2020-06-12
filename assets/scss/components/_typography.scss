@@ -180,4 +180,19 @@ p {
 	@include text(16px, null, $font-weight--light); 
 }
 
+h4 {
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
 
+.skills ul {
+    padding:0px;
+    margin-top:0px;
+    @include flexBox(flex, row, wrap){
+        justify-content: space-between;
+    }
+
+    li {
+       list-style-type: none; 
+    }
+}
