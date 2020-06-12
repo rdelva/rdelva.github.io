@@ -408,17 +408,63 @@ img {
   height: calc(100vh - 0px);
 }
 
-@media (min-width: 768px) and (max-width: 1080px) {
-  .bio-text {
+.container {
+  font-family: "Raleway", sans-serif;
+}
+
+@media (min-width: 1080px) and (max-width: 1280px) {
+  .bio {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1400px) {
+  .bio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1401px) {
+  .bio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1080px) and (max-width: 1280px) {
+  .bio-text {
+    width: 50%;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1400px) {
+  .bio-text {
+    width: 50%;
+  }
+}
+@media (min-width: 1401px) {
+  .bio-text {
     width: 50%;
   }
 }
 
-.container {
-  font-family: "Raleway", sans-serif;
+@media (min-width: 1080px) and (max-width: 1280px) {
+  .skills {
+    width: 30%;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1400px) {
+  .skills {
+    width: 30%;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1401px) {
+  .skills {
+    width: 30%;
+    margin-left: 10px;
+  }
 }
 
 .grid {
@@ -644,6 +690,30 @@ header {
     justify-content: space-between;
   }
 }
+@media (min-width: 1080px) and (max-width: 1280px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1400px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1401px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
 
 .sticky {
   position: fixed;
@@ -688,12 +758,48 @@ header {
     display: block;
   }
 }
+@media (min-width: 1080px) and (max-width: 1280px) {
+  #menu {
+    display: block;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1400px) {
+  #menu {
+    display: block;
+  }
+}
+@media (min-width: 1401px) {
+  #menu {
+    display: block;
+  }
+}
 #menu ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
 }
 @media (min-width: 768px) and (max-width: 1080px) {
+  #menu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: 1080px) and (max-width: 1280px) {
+  #menu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1400px) {
+  #menu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: 1401px) {
   #menu ul {
     display: flex;
     flex-direction: row;
@@ -734,7 +840,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
   }
 }
@@ -743,7 +849,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
   }
 }
@@ -969,6 +1075,21 @@ header {
 }
 
 @media (min-width: 768px) and (max-width: 1080px) {
+  #menu-button {
+    display: none;
+  }
+}
+@media (min-width: 1080px) and (max-width: 1280px) {
+  #menu-button {
+    display: none;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1400px) {
+  #menu-button {
+    display: none;
+  }
+}
+@media (min-width: 1401px) {
   #menu-button {
     display: none;
   }

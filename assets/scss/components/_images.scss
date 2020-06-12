@@ -10,13 +10,13 @@
 
     @include mq(small){
         @include flexBox(flex, row, wrap){
-            justify-content: space-between;
+            justify-content: space-around;
             padding:10px;
         }
     }
     @include mq(medium){
         @include flexBox(flex, row, wrap){
-            justify-content: space-around;
+            justify-content: space-between;
             padding:10px;
         }
     }
@@ -80,21 +80,14 @@
          transition-timing-function: ease-in-out;
 
          @include mq(xsmall){
-            @include text(18px, null, null);
-         
-            
-        } 
+            @include text(18px, null, null);  
+         } 
 
         @include mq(small){
-            @include text(18px, null, null);
-           
+            @include text(18px, null, null);           
         }
-
-
         @include mq(medium){
-            @include text(14px, null, null);
-          
-            
+            @include text(14px, null, null);     
         }
         @include mq(large){
             @include text(20px);

@@ -59,12 +59,3 @@ img {
 }
 
 
-.bio-text {
-
-	@include mq(medium){
-		@include flexBox(flex, row, nowrap){
-			width:50%;
-		}
-	}
-	
-}

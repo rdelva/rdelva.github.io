@@ -9,6 +9,51 @@
 }
 
 
+.bio{
+    @include mq(large){
+        @include flexBox(flex, row, wrap);
+    }
+    @include mq(xlarge){
+        @include flexBox(flex, row, wrap);
+    }
+    @include mq(xxlarge){
+        @include flexBox(flex, row, wrap);
+    }
+
+    &-text {
+        @include mq(large){
+            width:50%;
+        }
+        @include mq(xlarge){
+            width:50%;
+        }
+        @include mq(xxlarge){
+            width:50%;
+        }
+    }
+}
+
+
+
+
+.skills { 
+
+    @include mq(large){
+        width: 30%;
+      
+    }
+    @include mq(xlarge){
+        width: 30%;
+        margin-left:10px;
+    }
+     @include mq(xxlarge){
+        width: 30%;
+        margin-left:10px;
+    }
+}
+
+
+
 .grid {
 	@include e(row) {
 

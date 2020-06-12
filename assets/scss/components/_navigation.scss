@@ -7,6 +7,24 @@ header {
             justify-content: space-between;
         }  
     }
+
+    @include mq(large){
+        @include flexBox(flex, row, nowrap) {
+            justify-content: space-between;
+        }  
+    }
+
+    @include mq(xlarge){
+        @include flexBox(flex, row, nowrap) {
+            justify-content: space-between;
+        }  
+    }
+
+    @include mq(xxlarge){
+        @include flexBox(flex, row, nowrap) {
+            justify-content: space-between;
+        }  
+    }
      
 }
 
@@ -50,6 +68,16 @@ header {
     @include mq(medium) {
         display: block;
     }
+    @include mq(large) {
+        display: block;
+    }
+    @include mq(xlarge) {
+        display: block;
+    }
+    @include mq(xxlarge) {
+        display: block;
+    }
+    
 
     ul {
         list-style-type: none;
@@ -60,6 +88,17 @@ header {
             @include flexBox(flex, row, nowrap);
         }
 
+        @include mq(large) {
+            @include flexBox(flex, row, nowrap);
+        }
+
+        @include mq(xlarge) {
+            @include flexBox(flex, row, nowrap);
+        }
+
+        @include mq(xxlarge) {
+            @include flexBox(flex, row, nowrap);
+        }
         li {
             padding:10px;
             text-align: center;
