@@ -1103,6 +1103,30 @@ header {
     justify-content: space-between;
   }
 }
+@media (min-width: 1080px) and (max-width: 1280px) {
+  .contactInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1400px) {
+  .contactInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1401px) {
+  .contactInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
 
 .input-wrapper:first-child {
   margin-right: 10px;
@@ -1125,7 +1149,6 @@ textarea {
   width: 100%;
   margin: 10px 0px;
   border-radius: 5px;
-  border-radius: 5px;
   padding: 10px;
   border: none;
   height: 250px;
@@ -1135,7 +1158,7 @@ textarea {
   transition-duration: 0.5s;
 }
 textarea:focus {
-  border-bottom: 3px solid #C24935;
+  border-bottom: 1px solid #C24935;
 }
 
 [type=placeholder] {
