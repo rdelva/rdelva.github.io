@@ -10,6 +10,21 @@
        padding-left:40px;
        padding-top:35px;
    }
+   @include mq(large){
+        text-align: initial;
+        padding-left:40px;
+        padding-top:35px;
+    }
+    @include mq(xlarge){
+        text-align: initial;
+        padding-left:40px;
+        padding-top:35px;
+    }
+    @include mq(xxlarge){
+        text-align: initial;
+        padding-left:40px;
+        padding-top:35px;
+    }
    
 }
 
@@ -25,9 +40,6 @@
 }
 
 #header {
-
-  
-
     &-name {      
        
             @include text(25px, $mojo);
@@ -77,6 +89,19 @@ h1 { // my name
  
     }
 
+    @include mq(large){
+        @include text(150px);
+ 
+    }
+
+    @include mq(xlarge){
+        @include text(150px);
+ 
+    }
+    @include mq(xxlarge){
+        @include text(150px);
+ 
+    }
 }
 
 h2 { // my job title
@@ -84,18 +109,38 @@ h2 { // my job title
     @include text(22px, $blueWhale, $font-weight--light);
     font-family: $font-family--primary;
    
-    @include mq(xsmall) {
-        @include text(25px);
- 
-    }
+        @include mq(xsmall) {
+            @include text(25px);
+    
+        }
 
-    @include mq(medium){
-        padding-left:100px;
-        @include text(40px, null, $font-weight--medium);
- 
-    }
+        @include mq(medium){
+            padding-left:100px;
+            @include text(40px, null, $font-weight--medium);
+    
+        }
+            
+        @include mq(large){
+            padding-left:100px;
+            @include text(40px, null, $font-weight--medium);
+    
+        }
+
+        @include mq(xlarge){
+            padding-left:100px;
+            @include text(40px, null, $font-weight--medium);
+    
+        }
+        @include mq(xxlarge){
+            padding-left:100px;
+            @include text(40px, null, $font-weight--medium);
+    
+        }
+  
  
 }
+
+
 
 h3 {
     @include text(30px, null, $font-weight--light);

@@ -9,18 +9,24 @@
 }
 
 
-.bio{
+.bio, .contact-info{
     @include mq(large){
-        @include flexBox(flex, row, wrap);
+        @include flexBox(flex, row, wrap){
+            justify-content: space-between;
+        }
     }
     @include mq(xlarge){
-        @include flexBox(flex, row, wrap);
+        @include flexBox(flex, row, wrap){
+            justify-content: space-between;
+        }
     }
     @include mq(xxlarge){
-        @include flexBox(flex, row, wrap);
+        @include flexBox(flex, row, wrap) {
+            justify-content: space-between;
+        }
     }
 
-    &-text {
+    &-text, .contact-text {
         @include mq(large){
             width:50%;
         }
@@ -36,84 +42,19 @@
 
 
 
-.skills { 
+.skills, form { 
 
     @include mq(large){
-        width: 30%;
-      
+        width: 49%;      
     }
     @include mq(xlarge){
-        width: 30%;
+        width: 49%;
         margin-left:10px;
     }
      @include mq(xxlarge){
-        width: 30%;
+        width: 45%;
         margin-left:10px;
     }
 }
 
 
-
-.grid {
-	@include e(row) {
-
-		padding-top: 10px;
-		padding-bottom: 10px;
-		@extend %grid__row-disp;
-		@extend %clearfix;
-
-		&:last-of-type  {
-			@extend %grid__row-disp;
-		}
-
-	}
-
-	@include e(col) {
-
-
-	
-		@include  mq(medium) {
-
-				@include g-columns;					
-		}
-	
-	}/* enf of col */	
-
-
-}/*end of grid*/
-
-
-
-
-[class^="grid__col--"] { 
- 
-  	@include mq(small)  {
-  		@include flexBox(flex, column, wrap);
-    	margin-top: em(12px);
-    	margin-bottom: em(12px);
-  	}
-
-  @include mq(medium) {
-  	  	@include flexBox(flex, row, wrap);
-    	@include doubly(percentage($g-gutter-width / $context)); 
-  
-	    	 float: left;
-	    	min-height: 1px;
-	    	padding-left: 10px;
-	    	padding-right: 10px;
-	    	&:last-of-type {
-	      	float: right;
-
-	    	}
-  		}
- 
-}
-
-
-	.centered {
-
-  		@include mq(medium){
-			margin-right:auto;
-			margin-left:auto;
-  		}	
- 	}
