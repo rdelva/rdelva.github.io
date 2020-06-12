@@ -845,7 +845,13 @@ header {
 }
 @media (min-width: 1280px) and (max-width: 1400px) {
   .project-info {
-    font-size: 3.125em;
+    font-size: 1.5625em;
+    padding: 20px;
+  }
+}
+@media (min-width: 1401px) {
+  .project-info {
+    font-size: 2.5em;
     padding: 20px;
   }
 }
@@ -878,6 +884,16 @@ header {
 @media (min-width: 1080px) and (max-width: 1280px) {
   .project-text {
     line-height: 60px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1400px) {
+  .project-text {
+    line-height: 60px;
+  }
+}
+@media (min-width: 1401px) {
+  .project-text {
+    line-height: 50px;
   }
 }
 .project a {

@@ -110,11 +110,14 @@
         }
 
         @include mq(xlarge){
-            @include text(50px);
+            @include text(25px);
             padding:20px;
         }
         
-         
+        @include mq(xxlarge){
+            @include text(40px);          
+            padding:20px;
+        }
            
      }
 
@@ -142,6 +145,13 @@
         }
         @include mq(large){
             line-height: 60px;
+        }
+        @include mq(xlarge){
+            line-height: 60px;
+        }
+
+        @include mq(xxlarge){
+            line-height: 50px;
         }
         
      }
