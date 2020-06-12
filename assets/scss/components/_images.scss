@@ -45,26 +45,18 @@
 .project {
     position: relative;
     margin:10px 0;
-
- 
-
     @include mq(medium){
         width:45%;      
-
     }
     @include mq(large){
         width:45%;      
-
     }
    
     @include mq(xlarge){
         width:45%;      
-
-    }
-   
+    }   
     @include mq(xxlarge){
         width:45%;      
-
     }
    
    
@@ -88,24 +80,24 @@
          transition-timing-function: ease-in-out;
 
          @include mq(xsmall){
-            @include text(14px, null, null);
-            line-height: 30px;
+            @include text(18px, null, null);
+         
             
         } 
 
         @include mq(small){
-            @include text(32px, null, null);
-            line-height: 20px;
+            @include text(18px, null, null);
+           
         }
 
 
         @include mq(medium){
             @include text(14px, null, null);
-            line-height: 15px;
+          
             
         }
         @include mq(large){
-            @include text(25px);
+            @include text(20px);
             padding:20px;
         }
 
@@ -115,7 +107,7 @@
         }
         
         @include mq(xxlarge){
-            @include text(40px);          
+            @include text(35px);          
             padding:20px;
         }
            
@@ -134,8 +126,8 @@
 
      &-text {
         line-height: 20px;
-        @include mq(xsmall){
-            line-height: 30px;
+        @include mq(xsmall){         
+            line-height: 40px;
         }
         @include mq(small){
             line-height: 50px;
@@ -147,7 +139,7 @@
             line-height: 60px;
         }
         @include mq(xlarge){
-            line-height: 60px;
+            line-height: 50px;
         }
 
         @include mq(xxlarge){

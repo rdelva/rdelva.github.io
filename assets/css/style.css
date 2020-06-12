@@ -821,25 +821,22 @@ header {
 }
 @media (min-width: 375px) and (max-width: 640px) {
   .project-info {
-    font-size: 0.875em;
-    line-height: 30px;
+    font-size: 1.125em;
   }
 }
 @media (min-width: 640px) and (max-width: 768px) {
   .project-info {
-    font-size: 2em;
-    line-height: 20px;
+    font-size: 1.125em;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .project-info {
     font-size: 0.875em;
-    line-height: 15px;
   }
 }
 @media (min-width: 1080px) and (max-width: 1280px) {
   .project-info {
-    font-size: 1.5625em;
+    font-size: 1.25em;
     padding: 20px;
   }
 }
@@ -851,7 +848,7 @@ header {
 }
 @media (min-width: 1401px) {
   .project-info {
-    font-size: 2.5em;
+    font-size: 2.1875em;
     padding: 20px;
   }
 }
@@ -868,7 +865,7 @@ header {
 }
 @media (min-width: 375px) and (max-width: 640px) {
   .project-text {
-    line-height: 30px;
+    line-height: 40px;
   }
 }
 @media (min-width: 640px) and (max-width: 768px) {
@@ -888,7 +885,7 @@ header {
 }
 @media (min-width: 1280px) and (max-width: 1400px) {
   .project-text {
-    line-height: 60px;
+    line-height: 50px;
   }
 }
 @media (min-width: 1401px) {
