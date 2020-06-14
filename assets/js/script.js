@@ -24,8 +24,6 @@ document.addEventListener('scroll', (e) => {
 
     let scrollNum = window.pageYOffset;
     
-    console.log(scrollNum);
-
     if(scrollNum > 150){
         header.classList.add('sticky');
     } else {
