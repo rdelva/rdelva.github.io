@@ -195,3 +195,8 @@ h4 {
        padding-left:10px;
     }
 }
+
+.error {
+    color: $mojo;
+	@include text(10px, null, $font-weight--light); 
+}

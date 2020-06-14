@@ -659,6 +659,12 @@ h4 {
   padding-left: 10px;
 }
 
+.error {
+  color: #C24935;
+  font-size: 0.625em;
+  font-weight: 300;
+}
+
 header {
   display: flex;
   flex-direction: column;

@@ -2,6 +2,8 @@ const credit = document.getElementById('credit');
 const header = document.getElementById('header');
 const menuButton = document.getElementById('menu-button');
 const menu = document.getElementById('menu');
+const submit = document.getElementById('submit');
+
 
 
 
@@ -29,7 +31,19 @@ document.addEventListener('scroll', (e) => {
     } else {
         header.classList.remove('sticky');
     }
-   
-
 
 }); 
+
+submit.addEventListener('click', (e) => {
+    e.preventDefault();
+    let name = document.getElementById('form-name');
+    let eAddress = document.getElementById('form-email');
+    let subject = document.getElementById('form-subject');
+    let message = document.getElementById('form-message');
+
+
+    if(name === '' ){
+        console.log('Please fill out your name');
+    }
+
+});
