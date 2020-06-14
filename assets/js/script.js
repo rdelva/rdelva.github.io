@@ -36,14 +36,18 @@ document.addEventListener('scroll', (e) => {
 
 submit.addEventListener('click', (e) => {
     e.preventDefault();
+
     let name = document.getElementById('form-name');
     let eAddress = document.getElementById('form-email');
     let subject = document.getElementById('form-subject');
     let message = document.getElementById('form-message');
+    
+   
 
-
-    if(name === '' ){
-        console.log('Please fill out your name');
+  
+    if(name.value === '' ){
+       
+        name.prepend(`Please fill out your name`, div);
     }
 
 });
