@@ -1,6 +1,7 @@
 header {
+    padding:10px;
     
-    @include flexBox(flex, column, nowrap);  
+    @include flexBox(flex, column, nowrap);    
   
     @include mq(medium){
         @include flexBox(flex, row, nowrap) {
@@ -64,18 +65,27 @@ header {
 
 #menu {
     display:none;
+    margin:0px;
     
-    @include mq(medium) {
-        display: block;
+    @include mq(medium) {           
+        @include flexBox(flex, row, nowrap){
+            align-items: flex-end;
+        }
     }
     @include mq(large) {
-        display: block;
+        @include flexBox(flex, row, nowrap){
+            align-items: flex-end;
+        }
     }
     @include mq(xlarge) {
-        display: block;
+        @include flexBox(flex, row, nowrap){
+            align-items: flex-end;
+        }
     }
     @include mq(xxlarge) {
-        display: block;
+        @include flexBox(flex, row, nowrap){
+            align-items: flex-end;
+        }
     }
     
 
@@ -85,23 +95,40 @@ header {
         padding:0px;
 
         @include mq(medium) {
-            @include flexBox(flex, row, nowrap);
+            @include flexBox(flex, row, nowrap);           
         }
 
         @include mq(large) {
             @include flexBox(flex, row, nowrap);
+            justify-content: space-between;
         }
 
         @include mq(xlarge) {
             @include flexBox(flex, row, nowrap);
+            justify-content: space-between;
         }
 
         @include mq(xxlarge) {
             @include flexBox(flex, row, nowrap);
+            justify-content: space-between;
         }
         li {
             padding:10px;
             text-align: center;
+
+            @include mq(medium){
+                justify-content: space-between;
+                //margin-left:10px;
+            }
+            @include mq(large){
+                justify-content: space-between;
+            }
+            @include mq(xlarge){
+                justify-content: space-between;
+            }
+            @include mq(xxlarge){
+                justify-content: space-between;
+            }
         }      
             a {
                 text-decoration: none;            

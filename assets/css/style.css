@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px;
-}
-
 #menu ul a:link, #menu ul a:visited {
   font-size: em(20px);
   color: #4B4453;
@@ -525,7 +519,6 @@ body {
 #header-name {
   font-size: 1.5625em;
   color: #C24935;
-  padding-top: 20px;
   font-family: "Pacifico", cursive;
   display: inline-block;
 }
@@ -623,6 +616,7 @@ h2 {
 h3 {
   font-size: 1.875em;
   font-weight: 300;
+  margin: 0px;
 }
 
 .credit {
@@ -685,6 +679,7 @@ h4 {
 }
 
 header {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -759,25 +754,38 @@ header {
 
 #menu {
   display: none;
+  margin: 0px;
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   #menu {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
   }
 }
 @media (min-width: 1080px) and (max-width: 1280px) {
   #menu {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
   }
 }
 @media (min-width: 1280px) and (max-width: 1400px) {
   #menu {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
   }
 }
 @media (min-width: 1401px) {
   #menu {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
   }
 }
 #menu ul {
@@ -797,6 +805,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1280px) and (max-width: 1400px) {
@@ -804,6 +813,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1401px) {
@@ -811,11 +821,32 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
 #menu ul li {
   padding: 10px;
   text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+  #menu ul li {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1080px) and (max-width: 1280px) {
+  #menu ul li {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1400px) {
+  #menu ul li {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1401px) {
+  #menu ul li {
+    justify-content: space-between;
+  }
 }
 #menu ul a {
   text-decoration: none;
@@ -868,75 +899,8 @@ header {
   max-width: 100%;
 }
 
-@media (min-width: 640px) and (max-width: 768px) {
-  .portfolio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1080px) {
-  .portfolio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-  }
-}
-@media (min-width: 1080px) and (max-width: 1280px) {
-  .portfolio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1400px) {
-  .portfolio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-  }
-}
-@media (min-width: 1401px) {
-  .portfolio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-  }
-}
-
 .project {
   position: relative;
-  margin: 10px 0;
-}
-@media (min-width: 768px) and (max-width: 1080px) {
-  .project {
-    width: 45%;
-  }
-}
-@media (min-width: 1080px) and (max-width: 1280px) {
-  .project {
-    width: 45%;
-  }
-}
-@media (min-width: 1280px) and (max-width: 1400px) {
-  .project {
-    width: 45%;
-  }
-}
-@media (min-width: 1401px) {
-  .project {
-    width: 45%;
-  }
 }
 .project-info {
   font-size: 0.75em;

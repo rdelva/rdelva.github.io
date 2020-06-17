@@ -43,7 +43,7 @@
     &-name {      
        
             @include text(25px, $mojo);
-            padding-top:20px;
+            //padding-top:20px;
              font-family: $font-family--secondary;
              display: inline-block;
             @include mq(medium) {
@@ -143,7 +143,9 @@ h2 { // my job title
 
 
 h3 {
-    @include text(30px, null, $font-weight--light);
+    @include text(30px, null, $font-weight--light) {
+        margin:0px;
+    }
 }
 
 

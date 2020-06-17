@@ -3,11 +3,14 @@
 //========================================
 
 .container {
-	@extend %container;
-	 font-family: $font-family--primary;
+	//@extend %container;
+     font-family: $font-family--primary;
 
 }
 
+.portfolio {
+
+}
 
 .bio, .contact-info{
     @include mq(large){
