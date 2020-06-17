@@ -17,3 +17,12 @@
 
 
 
+%link {
+	@include text(  20px , $color: $mortar, $weight: $font-weight--light);
+
+}
+
+%row {
+	@include flexBox(flex, row, nowrap);
+
+}

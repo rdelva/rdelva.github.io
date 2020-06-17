@@ -34,7 +34,7 @@ document.addEventListener('scroll', (e) => {
 
 }); 
 
-submit.addEventListener('click', (e) => {
+/*submit.addEventListener('click', (e) => {
     e.preventDefault();
 
     let name = document.getElementById('form-name');
@@ -46,8 +46,8 @@ submit.addEventListener('click', (e) => {
 
   
     if(name.value === '' ){
-       
-        name.prepend(`Please fill out your name`, div);
+        console.log(name);
+        
     }
 
-});
+});*/

@@ -104,22 +104,63 @@ header {
             text-align: center;
         }      
             a {
-                text-decoration: none;
-            
+                text-decoration: none;            
                 width: 100%;
                 display: inline-block;
-
-                &:link {
-                    @include text(  20px , $color: $mortar, $weight: $font-weight--light);
+                position:relative;  
+                text-decoration: none;
+                padding-bottom: 5px;
+                @include text(  20px , $color: $mojo, $weight: $font-weight--light);  
                 
+                &::after {
+                    border-bottom: .1em solid $mojo; 
+                   // border-radius: 50%;                  
+                    content: "";
+                    position: absolute;
+                    right: 100%;                    
+                    bottom: .14em;
+                    left: 0;
+                    transition: right .4s cubic-bezier(0,.5,0,1);
+
+                }
+
+                
+                &:link,  &:visited {
+                    @extend %link;
                 }        
-                &:visited {
-                    @include text(  20px , $color: $mortar, $weight: $font-weight--light);
+                
+                &:hover   {
+                    @include text(  20px , $color: $mojo, $weight: $font-weight--light);               
+                   
+                    &:hover::after {
+                       // border-radius: 50%;    
+                        border-bottom: .1em solid $mojo;                    
+                        content: "";
+                        position: absolute;                      
+                        bottom: .14em;
+                        animation: anchor-underline 2s cubic-bezier(0,.5,0,1) 1;
+
+                    }    
+
+
                 }
-                &:hover {
-                    @include text(  20px , $color: $mojo, $weight: $font-weight--light);
-                }
+
             }   
     }
+
 }
 
+@keyframes anchor-underline {
+    0%, 10% {
+      left: 0;
+      right: 100%;
+    }
+    40%, 60% {
+      left: 0;
+      right: 0;
+    }
+    90%, 100% {
+      left: 100%;
+      right: 0;
+    }
+  }

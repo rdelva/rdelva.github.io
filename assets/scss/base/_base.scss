@@ -64,3 +64,14 @@ img {
 }
 
 
+//Fade in Animation for the homepage when you click into it.
+
+body {
+	animation-name: fadein;
+	animation-duration: .5s;
+
+}
+@keyframes fadein {
+	from {opacity:0;}
+	to {opacity:1;}
+}
