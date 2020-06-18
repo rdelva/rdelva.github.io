@@ -1,5 +1,6 @@
 header {
     padding:10px;
+    background-color: $white;
     
     @include flexBox(flex, column, nowrap);    
   

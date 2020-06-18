@@ -3,6 +3,7 @@
 //=========================================================
  body, html, .wrapper {
 	height: 100%;
+	background-color: $westar;
 
 }
 
@@ -52,7 +53,7 @@ img {
 
 .overlay {
 	background-color: $westar;
-	height: auto;
+	height: 100%;
 	width:100%;
 }
 

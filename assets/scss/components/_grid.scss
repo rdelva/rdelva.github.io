@@ -10,10 +10,12 @@
 }
 
 .portfolio {    
-  @extend %container; 
+    margin:0 auto;
+    width:95%;
 }
 
 .bio, .contact-info{
+    padding: 10px;
     @include mq(large){
         @include flexBox(flex, row, wrap){
             justify-content: space-between;

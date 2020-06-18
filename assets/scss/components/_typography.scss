@@ -103,8 +103,7 @@ h3 {
 #header {
     &-name {      
        
-            @include text(25px, $mojo);
-            //padding-top:20px;
+            @include text(25px, $mojo);          
              font-family: $font-family--secondary;
              display: inline-block;
             @include mq(medium) {

@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-.portfolio {
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px;
-}
-
 #menu ul a:link, #menu ul a:visited {
   font-size: em(20px);
   color: #4B4453;
@@ -353,6 +347,7 @@ template {
 
 body, html, .wrapper {
   height: 100%;
+  background-color: #DFDCD9;
 }
 
 * {
@@ -392,7 +387,7 @@ img {
 
 .overlay {
   background-color: #DFDCD9;
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 
@@ -419,6 +414,14 @@ body {
   width: 100%;
 }
 
+.portfolio {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.bio, .contact-info {
+  padding: 10px;
+}
 @media (min-width: 1080px) and (max-width: 1280px) {
   .bio, .contact-info {
     display: flex;
@@ -689,6 +692,7 @@ h4 {
 
 header {
   padding: 10px;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -908,47 +912,98 @@ header {
   max-width: 100%;
 }
 
+.project-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .project-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 768px) and (max-width: 1080px) {
   .project-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
   }
 }
+@media (min-width: 1080px) and (max-width: 1280px) {
+  .project-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1400px) {
+  .project-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1401px) {
+  .project-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
 .project {
   position: relative;
+  margin: 10px 0;
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .project {
+    width: 45%;
+    margin: 10px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .project {
-    width: 50%;
+    width: 45%;
+    margin: 10px;
   }
 }
 @media (min-width: 1080px) and (max-width: 1280px) {
   .project {
-    width: 50%;
+    width: 45%;
+    margin: 10px;
   }
 }
 @media (min-width: 1280px) and (max-width: 1400px) {
   .project {
-    width: 50%;
+    width: 45%;
+    margin: 10px;
   }
 }
 @media (min-width: 1401px) {
   .project {
-    width: 50%;
+    width: 45%;
+    margin: 10px;
   }
 }
 .project-info {
-  font-size: 0.75em;
+  font-size: 0.8125em;
   color: #fff;
   background-color: rgba(192, 74, 53, 0.93);
   height: 100%;
   width: 100%;
   max-width: 100%;
   padding: 10px;
-  color: #fff;
   position: absolute;
   z-index: 1;
   top: 0px;
@@ -962,17 +1017,20 @@ header {
 }
 @media (min-width: 375px) and (max-width: 640px) {
   .project-info {
-    font-size: 1.125em;
+    font-size: 0.75em;
+    color: #fff;
   }
 }
 @media (min-width: 640px) and (max-width: 768px) {
   .project-info {
-    font-size: 1.125em;
+    font-size: 0.75em;
+    color: #fff;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .project-info {
     font-size: 0.875em;
+    color: #fff;
   }
 }
 @media (min-width: 1080px) and (max-width: 1280px) {
@@ -1006,12 +1064,12 @@ header {
 }
 @media (min-width: 375px) and (max-width: 640px) {
   .project-text {
-    line-height: 40px;
+    line-height: 30px;
   }
 }
 @media (min-width: 640px) and (max-width: 768px) {
   .project-text {
-    line-height: 50px;
+    line-height: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
