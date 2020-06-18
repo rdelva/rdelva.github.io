@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+.portfolio {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 #menu ul a:link, #menu ul a:visited {
   font-size: em(20px);
   color: #4B4453;
@@ -387,6 +393,7 @@ img {
 .overlay {
   background-color: #DFDCD9;
   height: auto;
+  width: 100%;
 }
 
 .about {
@@ -409,6 +416,7 @@ body {
 }
 .container {
   font-family: "Raleway", sans-serif;
+  width: 100%;
 }
 
 @media (min-width: 1080px) and (max-width: 1280px) {
@@ -900,8 +908,37 @@ header {
   max-width: 100%;
 }
 
+@media (min-width: 768px) and (max-width: 1080px) {
+  .project-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .project {
   position: relative;
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+  .project {
+    width: 50%;
+  }
+}
+@media (min-width: 1080px) and (max-width: 1280px) {
+  .project {
+    width: 50%;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1400px) {
+  .project {
+    width: 50%;
+  }
+}
+@media (min-width: 1401px) {
+  .project {
+    width: 50%;
+  }
 }
 .project-info {
   font-size: 0.75em;

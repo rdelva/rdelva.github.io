@@ -3,13 +3,14 @@
 //========================================
 
 .container {
-	//@extend %container;
+	
      font-family: $font-family--primary;
+     width:100%;
 
 }
 
-.portfolio {
-
+.portfolio {    
+  @extend %container; 
 }
 
 .bio, .contact-info{
