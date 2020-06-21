@@ -34,20 +34,24 @@ document.addEventListener('scroll', (e) => {
 
 }); 
 
-/*submit.addEventListener('click', (e) => {
+submit.addEventListener('click', (e) => {
     e.preventDefault();
 
     let name = document.getElementById('form-name');
     let eAddress = document.getElementById('form-email');
     let subject = document.getElementById('form-subject');
     let message = document.getElementById('form-message');
+
+    //Error Messages
     
    
-
-  
-    if(name.value === '' ){
-        console.log(name);
-        
+    if(name.value == ''){
+       name.classList.add('error_name');
+    }
+    else {
+        console.log(name.value);
     }
 
-});*/
+  
+
+});
