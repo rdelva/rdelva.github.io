@@ -41,12 +41,20 @@ submit.addEventListener('click', (e) => {
     let eAddress = document.getElementById('form-email');
     let subject = document.getElementById('form-subject');
     let message = document.getElementById('form-message');
+    let errorMessage = document.createElement('SPAN');
 
-    //Error Messages
-    
+        //Error Messages   
    
     if(name.value == ''){
-       name.classList.add('error_name');
+        let errorMessage = document.createElement('SPAN');
+        let errorText = document.createTextNode(`Please fill out your name.`);
+        errorMessage.appendChild(errorText);
+
+        
+        
+
+       
+        
     }
     else {
         console.log(name.value);
