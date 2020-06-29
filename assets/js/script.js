@@ -46,12 +46,8 @@ submit.addEventListener('click', (e) => {
         //Error Messages   
    
     if(name.value == ''){
-        let errorMessage = document.createElement('SPAN');
-        let errorText = document.createTextNode(`Please fill out your name.`);
-        errorMessage.appendChild(errorText);
-
-        
-        
+     
+   
 
        
         

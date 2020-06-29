@@ -6,6 +6,13 @@
   font-weight: 300;
 }
 
+.error_message, .error_subject, .error_email, .error_name {
+  color: #FF0000;
+  font-size: 12px;
+  display: none;
+  position: absolute;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1148,7 +1155,7 @@ header {
 .icon {
   position: absolute;
   color: #C24935;
-  top: 20px;
+  top: 10px;
   left: 5px;
 }
 
@@ -1225,9 +1232,12 @@ header {
   margin-right: 10px;
 }
 
+.input-wrapper {
+  margin-bottom: 25px;
+}
+
 input[type=text], input[type=email] {
   width: 100%;
-  margin: 10px 0px 10px 0;
   outline: none;
   padding: 10px 10px 10px 30px;
   border: none;
@@ -1240,9 +1250,8 @@ input[type=text]:focus, input[type=email]:focus {
 
 textarea {
   width: 100%;
-  margin: 10px 0px;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
   border: none;
   height: 250px;
   background-color: #fff;
@@ -1262,6 +1271,7 @@ textarea:focus {
   display: block;
   border-radius: 5px;
   padding: 10px;
+  margin: 25px 0;
   width: 100%;
   background-color: #C24935;
   color: #fff;
@@ -1271,15 +1281,6 @@ textarea:focus {
   background-color: #fff;
   color: #C24935;
   border: none;
-}
-
-#error_name {
-  position: relative;
-  color: #f00;
-  font-size: 12px;
-  display: none;
-  z-index: 1;
-  top: -15px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,20 +22,26 @@
     }
 }
 
-.input-wrapper:first-child{
-    margin-right:10px;
+.input-wrapper{
+    &:first-child {
+        margin-right:10px;    
+    }
+}
+
+.input-wrapper {
+    margin-bottom:25px;
+    
 }
 
 
 input[type="text"], input[type="email"]{
-    width:100%;
-    margin:10px 0px 10px 0;
+    width:100%;  
     outline: none;
     padding: 10px  10px 10px 30px;           
     border: none;
     transition-property: border;
     transition-duration: .3s;
-
+    
 
     &:focus {
         border-bottom:1px solid $mojo;
@@ -45,9 +51,9 @@ input[type="text"], input[type="email"]{
 
 textarea {
     width:100%;
-    margin:10px 0px;
+   // margin:10px 0px;
     border-radius: 5px;  
-    padding:10px;
+    padding:5px;
     border:none;
     height:250px;
     background-color: $white;
@@ -67,6 +73,7 @@ textarea {
     display:block;
     border-radius: 5px;
     padding:10px;
+    margin:25px 0;
     width:100%;
     background-color: $mojo;
     color: $white;
@@ -77,20 +84,23 @@ textarea {
         color: $mojo;
         border:none;
 
-        
-
     }
 
 }
 
-#error_name {
-    position: relative;
-    color: #f00;
-    font-size:12px;
-    display:none;
-    z-index: 1;
-    top:-15px;
-    
+.error{    
+    &_name {    
+       @extend %errorMessage;          
+    }
+    &_email {    
+        @extend %errorMessage;
+    }
+    &_subject {    
+        @extend %errorMessage;
+    }
+    &_message {
+        @extend %errorMessage;
+    }    
 }
 
 

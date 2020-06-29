@@ -32,3 +32,10 @@
 	@include flexBox(flex, row, nowrap);
 
 }
+
+%errorMessage {	
+    color: $red;	
+	font-size: 12px;    
+	display: none;
+	position: absolute;
+}
