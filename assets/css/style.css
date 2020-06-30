@@ -1113,7 +1113,7 @@ header {
 }
 .project a:link {
   color: #fff;
-  transition-property: color, backgroundcolor;
+  transition-property: color, background-color;
   transition-duration: 1s;
 }
 .project a:visited {
