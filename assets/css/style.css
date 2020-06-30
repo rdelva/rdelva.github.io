@@ -1154,9 +1154,11 @@ header {
 
 .icon {
   position: absolute;
-  color: #C24935;
+  fill: #C24935;
   top: 10px;
   left: 5px;
+  width: 30px;
+  height: 30px;
 }
 
 .icon:focus {
