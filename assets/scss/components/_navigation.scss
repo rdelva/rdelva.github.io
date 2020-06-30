@@ -142,7 +142,7 @@ header {
                 
                 &::after {
                     border-bottom: .1em solid $mojo; 
-                   // border-radius: 50%;                  
+                             
                     content: "";
                     position: absolute;
                     right: 100%;                    
@@ -153,15 +153,17 @@ header {
                 }
 
                 
-                &:link,  &:visited {
+                &:link {
                     @extend %link;
                 }        
                 
+                &:visited {
+                    @extend %link;
+                }
                 &:hover   {
                     @include text(  20px , $color: $mojo, $weight: $font-weight--light);               
                    
-                    &:hover::after {
-                       // border-radius: 50%;    
+                    &:hover::after {                       
                         border-bottom: .1em solid $mojo;                    
                         content: "";
                         position: absolute;                      

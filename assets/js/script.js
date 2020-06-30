@@ -1,5 +1,3 @@
-const credit = document.getElementById('credit');
-const header = document.getElementById('header');
 const menuButton = document.getElementById('menu-button');
 const menu = document.getElementById('menu');
 const submit = document.getElementById('submit');
@@ -45,13 +43,12 @@ submit.addEventListener('click', (e) => {
     let errorName = document.querySelector('.error_name');
     let errorEmail = document.querySelector('.error_email');
     let errorSubject = document.querySelector('.error_subject');
-    let errorMessage = document.querySelector('.error_subject')
+    let errorMessage = document.querySelector('.error_message');
 
     //Error Messages   
    
     if(formName.value == ''){   
-        errorName.style.display = 'block';
-        formName.classList.add('error_highlight');
+        errorName.style.display = 'block';        
     } else {
         errorName.style.display = 'hide';
     }

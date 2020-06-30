@@ -24,8 +24,9 @@
 
 
 %link {
-	@include text(  20px , $color: $mortar, $weight: $font-weight--light);
-
+	font-size: 20px;
+	color: $mortar;
+	font-weight: $font-weight--light;
 }
 
 %row {
