@@ -32,44 +32,48 @@ document.addEventListener('scroll', (e) => {
 
 }); 
 
-submit.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    let formName = document.getElementById('form-name');
-    let eAddress = document.getElementById('form-email');
-    let subject = document.getElementById('form-subject');
-    let message = document.getElementById('form-message');
-  
-    let errorName = document.querySelector('.error_name');
-    let errorEmail = document.querySelector('.error_email');
-    let errorSubject = document.querySelector('.error_subject');
-    let errorMessage = document.querySelector('.error_message');
-
-    //Error Messages   
-   
-    if(formName.value == ''){   
-        errorName.style.display = 'block';        
-    } else {
-        errorName.style.display = 'hide';
-    }
-
-    if(eAddress.value == ''){   
-        errorEmail.style.display = 'block';
-    } else {
-        errorEmail.style.display = 'hide';
-    }
-
-    if(subject.value == ''){   
-        errorSubject.style.display = 'block';
-    } else {
-        errorSubject.style.display = 'hide';
-    }
+if (submit !== null){ //code will only execute if its on the Contact page
+    submit.addEventListener('click', (e) => {
+        e.preventDefault();
     
-    if(message.value == ''){   
-        errorMessage.style.display = 'block';
-    } else {
-        errorMessage.style.display = 'hide';
-    }
-  
+        let formName = document.getElementById('form-name');
+        let eAddress = document.getElementById('form-email');
+        let subject = document.getElementById('form-subject');
+        let message = document.getElementById('form-message');
+      
+        let errorName = document.querySelector('.error_name');
+        let errorEmail = document.querySelector('.error_email');
+        let errorSubject = document.querySelector('.error_subject');
+        let errorMessage = document.querySelector('.error_message');
+    
+        //Error Messages   
+       
+        if(formName.value == ''){   
+            errorName.style.display = 'block';        
+        } else {
+            errorName.style.display = 'hide';
+        }
+    
+        if(eAddress.value == ''){   
+            errorEmail.style.display = 'block';
+        } else {
+            errorEmail.style.display = 'hide';
+        }
+    
+        if(subject.value == ''){   
+            errorSubject.style.display = 'block';
+        } else {
+            errorSubject.style.display = 'hide';
+        }
+        
+        if(message.value == ''){   
+            errorMessage.style.display = 'block';
+        } else {
+            errorMessage.style.display = 'hide';
+        }
+      
+    
+    });
 
-});
+}
+

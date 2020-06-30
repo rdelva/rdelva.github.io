@@ -99,6 +99,7 @@ textarea {
     }
     &_message {
         @extend %errorMessage;
+        margin-top:-10px;
     }
   
 }
