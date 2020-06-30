@@ -37,25 +37,42 @@ document.addEventListener('scroll', (e) => {
 submit.addEventListener('click', (e) => {
     e.preventDefault();
 
-    let name = document.getElementById('form-name');
+    let formName = document.getElementById('form-name');
     let eAddress = document.getElementById('form-email');
     let subject = document.getElementById('form-subject');
     let message = document.getElementById('form-message');
-    let errorMessage = document.createElement('SPAN');
+  
+    let errorName = document.querySelector('.error_name');
+    let errorEmail = document.querySelector('.error_email');
+    let errorSubject = document.querySelector('.error_subject');
+    let errorMessage = document.querySelector('.error_subject')
 
-        //Error Messages   
+    //Error Messages   
    
-    if(name.value == ''){
-     
-   
-
-       
-        
-    }
-    else {
-        console.log(name.value);
+    if(formName.value == ''){   
+        errorName.style.display = 'block';
+        formName.classList.add('error_highlight');
+    } else {
+        errorName.style.display = 'hide';
     }
 
+    if(eAddress.value == ''){   
+        errorEmail.style.display = 'block';
+    } else {
+        errorEmail.style.display = 'hide';
+    }
+
+    if(subject.value == ''){   
+        errorSubject.style.display = 'block';
+    } else {
+        errorSubject.style.display = 'hide';
+    }
+    
+    if(message.value == ''){   
+        errorMessage.style.display = 'block';
+    } else {
+        errorMessage.style.display = 'hide';
+    }
   
 
 });

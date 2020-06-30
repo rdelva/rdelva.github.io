@@ -29,7 +29,7 @@
 }
 
 .input-wrapper {
-    margin-bottom:25px;
+    margin-bottom:30px;
     
 }
 
@@ -100,7 +100,8 @@ textarea {
     }
     &_message {
         @extend %errorMessage;
-    }    
+    }
+  
 }
 
 
